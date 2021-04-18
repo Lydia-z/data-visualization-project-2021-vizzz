@@ -32,8 +32,10 @@ The three dataset has similar attributes but different data tuples. These datase
 
 The data cleaning process consists of:
 * Exploration of each dataset:
+
 Firstly, we made an exploration on each dataset. In each dataset, we first explore the number of movies in the dataset. To drop repeated data in the dataset, we choose two features, the movie name and release date, to identify the number of movies. As some of Disney movies have identical names released on different dates, we choose to identify these movies as different ones as they may be remade.
 * Selection of needed features:
+
 As original datasets contain a large number of features, we only select features we need. Thus for each dataset, we select features such as, title, release date, budget, box office, imdb score and so on.
 
 ### Problematic
