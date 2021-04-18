@@ -60,11 +60,11 @@ The target audience persona is
 > Pre-processing of the data set you chose
 > - Show some basic statistics and get insights about the data
 
-## Pre-processing of the data set you chose
+#### Pre-processing of the data set you chose
 
   In order to get as much information as we can, we choose to merge the three datasets and get a final dataset to be used in this project. To merge datasets, we drop duplicate data according to the movie title and release date. The final dataset is organized according to the release date. Then we drop all data that has null values excluded Directed by, Produced by, Music By, and Distributed by for data visualization purposes.  Then we reset the index and get the final dataset.
  
-## Show some basic statistics and get insights about the data
+#### Show some basic statistics and get insights about the data
 
   According to our final dataset, we analyze the data from five aspects. 
 * Analysis of running time:
