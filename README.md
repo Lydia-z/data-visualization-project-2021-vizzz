@@ -28,16 +28,29 @@ The datasets we would like to explore are from Kaggle, we found three datasets r
 * [Walt Disney Movies - Diksha Bhati](https://www.kaggle.com/dikshabhati2002/walt-disney-movies)
 * [Disney Movies and Films Dataset - Sameer Patel](https://www.kaggle.com/therealsampat/disney-movies-dataset)
 
-The three dataset has similar attributes but different data tuples. These datasets are generally clean, we did not observe out-of-range numerical values or digital gibberish in text attribute. However, the three datasets contain redundant contents and around ¼ of the tuples do not have completed information, which requires additional data cleaning. The data pre-processing is detailed in the EDA part of the report. 
+The three dataset has similar attributes but different data tuples. These datasets are generally clean, we did not observe out-of-range numerical values or digital gibberish in text attribute. However, the three datasets contain redundant contents and around ¼ of the tuples do not have completed information, which requires additional data cleaning. 
+
+The data cleaning process consists of:
+* Exploration of each dataset:
+Firstly, we made an exploration on each dataset. In each dataset, we first explore the number of movies in the dataset. To drop repeated data in the dataset, we choose two features, the movie name and release date, to identify the number of movies. As some of Disney movies have identical names released on different dates, we choose to identify these movies as different ones as they may be remade.
+* Selection of needed features:
+As original datasets contain a large number of features, we only select features we need. Thus for each dataset, we select features such as, title, release date, budget, box office, imdb score and so on.
 
 ### Problematic
 
 > Frame the general topic of your visualization and the main axis that you want to develop.
 > - What am I trying to show with my visualization?
 > - Think of an overview for the project, your motivation, and the target audience.
-> 
 
+The topic of our visualization project is to explore the movies from Disney. The current scenes have been designed as following
+* The audience will check in our visualization through the standard Disney title sequence. The main page of the visualization will conclude the most popular movies from Disney, their issue timeline. The user click will trigger the theme song of the corresponding movie. 
+* The second scene is designed to be an interactive page about the main characters. The audience will be allowed to choose their favourite character from a given list. The chosen character will be colored and a visualization page of the most popular characters will appear. 
+* The third scene will be a film ranking with the criterias including budget, box office, and imdb rating.
+* The forth scene will present the directors and/or producers. It will enable the audience to find movies fit their taste. This scene is inspired by the Beatles visualization project shown during the course. 
 
+The target audience persona are
+* 25-50 years old adults, searching for a movie to watch but have limited time to make the decision. The audiences demand a quick visualization tool to explore the top movies from Disney and select the next movie to watch with data-driven decision making. 
+* 8-30 years old Disney fans, who had watched movies featured by Disney and enjoyed at least one of the movies. The audiences have the time and passion to explore more information about the movies including the main characters. They would like to have a visual overview on all Disney movies and the visualization tool should be a good index for further research. 
 
 
 ### Exploratory Data Analysis
