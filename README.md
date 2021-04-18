@@ -2,9 +2,9 @@
 
 | Student's name | SCIPER |
 | -------------- | ------ |
-| | |
-| | |
-| | |
+| Lin, Yuanhui   | |
+| Zhou, Runke    | |
+| Di, Yao        | 255619|
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
@@ -23,11 +23,22 @@ Please, fill the following sections about your project.
 >
 > Hint: some good pointers for finding quality publicly available datasets ([Google dataset search](https://datasetsearch.research.google.com/), [Kaggle](https://www.kaggle.com/datasets), [OpenSwissData](https://opendata.swiss/en/), [SNAP](https://snap.stanford.edu/data/) and [FiveThirtyEight](https://data.fivethirtyeight.com/)), you could use also the DataSets proposed by the ENAC (see the Announcements section on Zulip).
 
+The datasets we would like to explore are from Kaggle, we found three datasets related to Disney movies, including:
+* [Walt Disney Movies - Soaibuzzaman](https://www.kaggle.com/sooaaib/walt-disney-movies?select=disney_movies.csv)
+* [Walt Disney Movies - Diksha Bhati](https://www.kaggle.com/dikshabhati2002/walt-disney-movies)
+* [Disney Movies and Films Dataset - Sameer Patel](https://www.kaggle.com/therealsampat/disney-movies-dataset)
+
+The three dataset has similar attributes but different data tuples. These datasets are generally clean, we did not observe out-of-range numerical values or digital gibberish in text attribute. However, the three datasets contain redundant contents and around ¼ of the tuples do not have completed information, which requires additional data cleaning. The data pre-processing is detailed in the EDA part of the report. 
+
 ### Problematic
 
 > Frame the general topic of your visualization and the main axis that you want to develop.
 > - What am I trying to show with my visualization?
 > - Think of an overview for the project, your motivation, and the target audience.
+> 
+
+
+
 
 ### Exploratory Data Analysis
 
