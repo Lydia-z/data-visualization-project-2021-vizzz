@@ -95,6 +95,25 @@ Another important statistic about movies is people interacting in a movie. Peopl
 > - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data).
 > - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class.
 
+#### What others have already done with the data?
+We found the following project which has been done with the same dataset.
+* [Data Visualization for Disney Movies](https://public.tableau.com/profile/maliha.momtaz#!/vizhome/DisneyMovies_16147213546350/DisneyMovies)
+
+
+#### Why is your approach original?
+We did not find any interactive visualization website including all the features we planned to implement in our scenes. 
+
+#### What source of inspiration do you take?
+The top movie ranking part is inspired by the Beatles case shown in the class 
+The interactive part is inspired by the red wine case shown in the class
+
+#### Visualizations that you found on other websites or magazines?
+We found the following visualization project which could be done with a similar topic. 
+* [Data Visualization for Gender Inequality in Disney Films](https://www.aberdeen.com/featured/blog-data-visualization-disney-intent/)
+* [Disney Movies 1937-2016 Gross Income](https://www.kaggle.com/discussion/225933)
+* [Disney Movies by Year and Type - Nicole](https://public.tableau.com/profile/nicole1574#!/vizhome/DisneyMovies2/Dashboard1)
+* [Disney Films Visualization - Bushra Nadeem](https://public.tableau.com/profile/b.humanadeem#!/vizhome/DisneyFilms_15931097490060/DisneyFilms)
+
 ## Milestone 2 (7th May, 5pm)
 
 **10% of the final grade**
