@@ -57,10 +57,13 @@ The target audience persona is
 
 
 ### Exploratory Data Analysis
-
 > Pre-processing of the data set you chose
+> - Show some basic statistics and get insights about the data
+
+Pre-processing of the data set you chose
   In order to get as much information as we can, we choose to merge the three datasets and get a final dataset to be used in this project. To merge datasets, we drop duplicate data according to the movie title and release date. The final dataset is organized according to the release date. Then we drop all data that has null values excluded Directed by, Produced by, Music By, and Distributed by for data visualization purposes.  Then we reset the index and get the final dataset.
-> Show some basic statistics and get insights about the data
+ 
+Show some basic statistics and get insights about the data
   According to our final dataset, we analyze the data from five aspects. 
 * Analysis of running time:
   Through analyzing the running time of Disney movies. We find that the shortest Disney movie is Roving Mars and the longest Disney movie is Pirates of the Caribbean: At World's End. We also analyze the running time distribution of Disney movies.
@@ -72,10 +75,6 @@ The target audience persona is
   One of the most important features of movies is the ratings. In our final dataset, we have three ratings for a movie, IMDb, Metascore, and rotten_tomatoes. We also derive the distribution of these three kinds of ratings for all Disney movies.
 * Analysis of People:
 Another important statistic about movies is people interacting in a movie. People interacting in a movie include directors, producers, musicians, and distributors. Through this analysis, we can have a better understanding of who took part in more Disney movies.
-
-
-
-
 
 ### Related work
 
