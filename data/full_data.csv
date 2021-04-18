@@ -1,0 +1,225 @@
+,title,Running time,Budget,Box office,Release date,imdb,metascore,rotten_tomatoes,Directed by,Produced by,Music by,Distributed by,year
+0,Pinocchio,88,2600000,164000000,1940/2/7,7.4,99,100,"['Ben Sharpsteen', 'Hamilton Luske', 'Bill Roberts', 'Norman Ferguson', 'Jack Kinney', 'Wilfred Jackson', 'T. Hee']",Walt Disney,"['Leigh Harline', 'Paul J. Smith']",RKO Radio Pictures,1940
+1,Fantasia,126,2280000,83300000,1940/11/13,7.8,96,95,"['Samuel Armstrong', 'James Algar', 'Bill Roberts', 'Paul Satterfield', 'Ben Sharpsteen', 'David D. Hand', 'Hamilton Luske', 'Jim Handley', 'Ford Beebe', 'T. Hee', 'Norman Ferguson', 'Wilfred Jackson']","['Walt Disney', 'Ben Sharpsteen']",See program,"['Walt Disney Productions', 'RKO Radio Pictures']",1940
+2,Dumbo,64,950000,1300000,1941/10/23,7.2,96,98,"['Supervising director:', 'Ben Sharpsteen', 'Sequence directors:', 'Norman Ferguson', 'Wilfred Jackson', 'Bill Roberts', 'Jack Kinney', 'Samuel Armstrong']",Walt Disney,"['Frank Churchill', 'Oliver Wallace']",RKO Radio Pictures,1941
+3,Bambi,70,858000,267400000,1942/8/9,7.3,91,90,"['Supervising director', 'David Hand', 'Sequence directors', 'James Algar', 'Samuel Armstrong', 'Graham Heid', 'Bill Roberts', 'Paul Satterfield', 'Norman Wright']",Walt Disney,"['Frank Churchill', 'Edward H. Plumb']",RKO Radio Pictures,1942
+4,Make Mine Music,75,1350000,3275000,1946/4/20,6.3,60,70,"['Jack Kinney', 'Clyde Geronimi', 'Hamilton Luske', 'Joshua Meador', 'Robert Cormack']",Walt Disney,"['Eliot Daniel', 'Ken Darby', 'Charles Wolcott', 'Oliver Wallace', 'Edward Plumb']","RKO Radio Pictures, Inc.",1946
+5,Song of the South,94,2125000,65000000,1946/11/12,7.1,54,50,"['Live action:', 'Harve Foster', 'Animation:', 'Wilfred Jackson']",Walt Disney,"['Edward Plumb', 'Daniele Amfitheatrof', 'Paul J. Smith', 'Charles Wolcott']",RKO Radio Pictures,1946
+6,Melody Time,75,1500000,2560000,1948/5/27,6.4,69,80,"['Jack Kinney', 'Clyde Geronimi', 'Hamilton Luske', 'Wilfred Jackson']",Walt Disney,"['Eliot Daniel', 'Paul J. Smith', 'Ken Darby']","RKO Radio Pictures, Inc.",1948
+7,Cinderella,74,2900000,263600000,1950/2/15,6.9,67,84,"['Clyde Geronimi', 'Hamilton Luske', 'Wilfred Jackson']",Walt Disney,"['Oliver Wallace', 'Paul J. Smith']",RKO Radio Pictures,1950
+8,Alice in Wonderland,75,3000000,5600000,1951/7/26,6.4,53,51,"['Clyde Geronimi', 'Wilfred Jackson', 'Hamilton Luske']",Walt Disney,Oliver Wallace,RKO Radio Pictures,1951
+9,Peter Pan,77,4000000,87400000,1953/2/5,7.3,76,81,"['Clyde Geronimi', 'Wilfred Jackson', 'Hamilton Luske']",Walt Disney,Oliver Wallace,RKO Radio Pictures,1953
+10,The Living Desert,69,300000,2600000,1953/11/10,7.5,69,74,James Algar,"['Ben Sharpsteen', 'Walt Disney']",Paul J. Smith,Buena Vista Distribution,1953
+11,"20,000 Leagues Under the Sea",127,5000000,28200000,1954/12/23,7.2,83,89,Richard Fleischer,Walt Disney,"['Paul Smith', 'Joseph S. Dubin', '(orchestration)']",Buena Vista Distribution,1954
+12,Lady and the Tramp,76,4000000,187000000,1955/6/22,7.3,78,93,"['Clyde Geronimi', 'Wilfred Jackson', 'Hamilton Luske']",Walt Disney,Oliver Wallace,Buena Vista Film Distribution,1955
+13,Sleeping Beauty,75,6000000,51600000,1959/1/29,7.2,85,89,"['Clyde Geronimi (supervising)', 'Eric Larson', 'Wolfgang Reitherman', 'Les Clark']",Walt Disney,George Bruns (adapted from Tchaikovsky's Sleeping Beauty Ballet ),Buena Vista Distribution,1959
+14,The Shaggy Dog,104,1000000,12300000,1959/3/19,4.4,43,26,Charles Barton,"['Walt Disney', 'Bill Walsh']",Paul J. Smith,Buena Vista Distribution,1959
+15,Swiss Family Robinson,126,4000000,40000000,1960/12/21,7.2,61,82,"['John McKimson', 'Ken Annakin']","['Bill Anderson', 'Basil Keys', 'Walt Disney']","['William Alwyn', '(composer)', 'Muir Mathieson', '(conductor)']",Buena Vista Distribution,1960
+16,One Hundred and One Dalmatians,79,3600000,303000000,1961/1/25,7.2,83,98,"['Clyde Geronimi', 'Hamilton Luske', 'Wolfgang Reitherman']",Walt Disney,George Bruns,Buena Vista Pictures Distribution,1961
+17,Babes in Toyland,105,3000000,4600000,1961/12/14,6.3,55,36,Jack Donohue,Walt Disney,"['Victor Herbert', 'George Bruns', 'Mel Leven (new lyrics)']",Buena Vista Distribution,1961
+18,The Sword in the Stone,79,3000000,22200000,1963/12/25,7.2,61,66,Wolfgang Reitherman,Walt Disney,George Bruns,Buena Vista Distribution,1963
+19,Mary Poppins,139,4400000,103100000,1964/8/27,7.8,88,100,Robert Stevenson,Walt Disney,"['Richard M. Sherman (songs)', 'Robert B. Sherman (songs)', 'Irwin Kostal (score)']",Buena Vista Distribution,1964
+20,The Jungle Book,78,4000000,378000000,1967/10/18,7.4,77,94,Wolfgang Reitherman,Walt Disney,George Bruns,Buena Vista Distribution,1967
+21,The Love Bug,108,5000000,51264000,1968/12/24,6.5,48,76,Robert Stevenson,Bill Walsh,George Bruns,Buena Vista Distribution,1968
+22,The Aristocats,79,4000000,191000000,1970/12/11,7.1,66,64,Wolfgang Reitherman,"['Winston Hibler', 'Wolfgang Reitherman']",George Bruns,Buena Vista Distribution,1970
+23,Bedknobs and Broomsticks,118,6300000,17900000,1971/10/7,7.1,59,66,Robert Stevenson,Bill Walsh,Irwin Kostal,Buena Vista Distribution,1971
+24,Robin Hood,83,5000000,32000000,1973/11/8,6.6,53,43,Wolfgang Reitherman,Wolfgang Reitherman,George Bruns,Buena Vista Distribution,1973
+25,Freaky Friday,95,5000000,36000000,1976/12/17,6.2,70,88,Gary Nelson,Ron Miller,Johnny Mandel,Buena Vista Distribution,1976
+26,Freaky Friday,95,5000000,36000000,1976/12/20,6.2,70,88,Gary Nelson,Ron Miller,Johnny Mandel,Buena Vista Distribution,1976
+27,The Rescuers,77,7500000,169000000,1977/6/22,6.9,74,81,"['Wolfgang Reitherman', 'John Lounsbery', 'Art Stevens']","['Wolfgang Reitherman', 'Ron W. Miller']",Artie Butler,Buena Vista Distribution,1977
+28,Pete's Dragon,128,10000000,36,1977/11/3,6.7,71,88,Don Chaffey,"['Jerome Courtland', 'Ron W. Miller']",Irwin Kostal,Buena Vista Distribution,1977
+29,The Black Hole,98,20000000,35800000,1979/12/18,6,52,38,Gary Nelson,Ron Miller,John Barry,Buena Vista Distribution,1979
+30,Popeye,114,20000000,60000000,1980/12/6,5.3,64,59,Robert Altman,Robert Evans,Harry Nilsson,"['Paramount Pictures (North America)', '(North America)', 'Buena Vista International Distribution (International)', '(International)']",1980
+31,Dragonslayer,109,18000000,14100000,1981/6/26,6.7,68,84,Matthew Robbins,"['Hal Barwood', 'Howard W. Koch']",Alex North,"['Paramount Pictures', 'Buena Vista International Distribution']",1981
+32,The Fox and the Hound,83,12000000,63500000,1981/7/10,7.3,65,70,"['Ted Berman', 'Richard Rich', 'Art Stevens']","['Ron Miller', 'Wolfgang Reitherman', 'Art Stevens']",Buddy Baker,Buena Vista Distribution,1981
+33,Tex,103,5000000,7400000,1982/7/30,6.5,78,85,Tim Hunter,"['Tim Zinnemann', 'Ron Miller']",Pino Donaggio,Buena Vista Distribution,1982
+34,Return to Oz,113,28000000,11100000,1985/6/21,6.7,42,53,Walter Murch,Paul Maslansky,David Shire,Buena Vista Distribution,1985
+35,The Black Cauldron,80,25000000,21300000,1985/7/26,6.4,59,53,"['Ted Berman', 'Richard Rich']","['Joe Hale', 'Ron Miller']",Elmer Bernstein,Buena Vista Distribution,1985
+36,The Great Mouse Detective,74,14000000,38700000,1986/7/2,7.2,73,80,"['Ron Clements', 'Burny Mattinson', 'Dave Michener', 'John Musker']",Burny Mattinson,Henry Mancini,Buena Vista Distribution,1986
+37,Flight of the Navigator,90,9000000,18564613,1986/8/1,6.9,64,84,Randal Kleiser,"['Dimitri Villard', 'Robert Wald']",Alan Silvestri,"['PSO Productions (outside North America)', 'Buena Vista Distribution']",1986
+38,Oliver & Company,74,31000000,121000000,1988/11/18,6.7,58,50,George Scribner,,J. A. C. Redford,Buena Vista Pictures Distribution,1988
+39,"Honey, I Shrunk the Kids",93,18000000,222700000,1989/6/23,6.4,63,76,Joe Johnston,Penney Finkelman Cox,James Horner,Buena Vista Pictures,1989
+40,White Fang,107,14000000,34800000,1991/1/18,6.7,62,65,Randal Kleiser,Markay Powell,"['Basil Poledouris', 'Hans Zimmer', '(additional music)']",Buena Vista Pictures,1991
+41,The Rocketeer,108,35000000,46700000,1991/6/21,6.5,61,65,Joe Johnston,"['Charles Gordon', 'Lawrence Gordon', 'Lloyd Levin']",James Horner,Buena Vista Pictures,1991
+42,Beauty and the Beast,84,25000000,440100000,1991/9/29,8,95,94,"['Gary Trousdale', 'Kirk Wise']",Don Hahn,Alan Menken,Buena Vista Pictures,1991
+43,Newsies,121,15000000,2800000,1992/4/10,7,46,39,Kenny Ortega,Michael Finnell,"['Alan Menken', 'J. A. C. Redford']",Buena Vista Pictures,1992
+44,"Honey, I Blew Up the Kid",89,40000000,58700000,1992/7/17,4.9,50,40,Randal Kleiser,"['Dawn Steel', 'Edward S. Feldman']",Bruce Broughton,Buena Vista Pictures,1992
+45,The Mighty Ducks,104,14000000,50800000,1992/10/2,6.5,46,23,Stephen Herek,"['Jon Avnet', 'Jordan Kerner']",David Newman,Buena Vista Pictures,1992
+46,Aladdin,90,28000000,504100000,1992/11/25,8,86,95,"['John Musker', 'Ron Clements']","['John Musker', 'Ron Clements']",Alan Menken,Buena Vista Pictures,1992
+47,The Muppet Christmas Carol,86,12000000,27200000,1992/12/11,7.7,64,76,Brian Henson,"['Brian Henson', 'Martin G. Baker']",Miles Goodman,Buena Vista Pictures Distribution,1992
+48,Cool Runnings,98,17000000,154900000,1993/10/1,7,60,76,Jon Turteltaub,"['Dawn Steel', 'Susan B. Landau', 'Jeffrey Bydalek']",Hans Zimmer,Buena Vista Pictures,1993
+49,The Nightmare Before Christmas,76,18000000,89100000,1993/10/29,8,82,95,Henry Selick,"['Tim Burton', 'Denise Di Novi']",Danny Elfman,Buena Vista Pictures Distribution,1993
+50,The Three Musketeers,105,30000000,53900000,1993/11/12,5.7,35,26,Stephen Herek,"['Roger Birnbaum', 'Joe Roth', 'Jon Avnet']",Michael Kamen,Buena Vista Pictures,1993
+51,Blank Check,94,13000000,30600000,1994/2/11,5.3,42,9,Rupert Wainwright,"['Gary Adelson', 'Craig Baumgarten', 'Tony Shimkin']",Nicholas Pike,Buena Vista Pictures,1994
+52,The Lion King,88,45000000,968500000,1994/6/15,8.5,88,93,"['Roger Allers', 'Rob Minkoff']",Don Hahn,Hans Zimmer,Buena Vista Pictures,1994
+53,Angels in the Outfield,102,31000000,50200000,1994/7/15,6.2,44,33,William Dear,"['Irby Smith', 'Joe Roth', 'Roger Birnbaum']",Randy Edelman,Buena Vista Pictures,1994
+54,The Santa Clause,97,22000000,189800000,1994/11/11,6.5,57,71,John Pasquin,"['Robert Newmyer', 'Brian Reilly', 'Jeffrey Silver']",Michael Convertino,Buena Vista Pictures,1994
+55,Man of the House,96,22000000,40070995,1995/3/3,5.4,35,9,James Orr,"['Bonnie Bruckheimer', 'Marty Katz']",Mark Mancina,Buena Vista Pictures,1995
+56,Pocahontas,81,55000000,346100000,1995/6/23,6.7,58,55,"['Mike Gabriel', 'Eric Goldberg']",Jim Pentecost,Alan Menken,Buena Vista Pictures,1995
+57,Operation Dumbo Drop,108,24000000,24670346,1995/7/28,5.1,48,31,Simon Wincer,"['Diane Nabatoff', 'David Madden']",David Newman,Buena Vista Pictures,1995
+58,A Kid in King Arthur's Court,89,15000000,13400000,1995/8/11,4.7,34,5,Michael Gottlieb,"['Peter Abrams', 'J.P. Guerin', 'Robert L. Levy']",J. A. C. Redford,"['Buena Vista Pictures', '(United States)', 'Trimark Pictures (International)']",1995
+59,Toy Story,81,30000000,373600000,1995/11/19,8.3,95,100,John Lasseter,"['Bonnie Arnold', 'Ralph Guggenheim']",Randy Newman,Buena Vista Pictures Distribution,1995
+60,Muppet Treasure Island,100,31000000,34300000,1996/2/16,7,64,73,Brian Henson,"['Martin G. Baker', 'Brian Henson']",Hans Zimmer,Buena Vista Pictures Distribution,1996
+61,James and the Giant Peach,79,38000000,28900000,1996/4/12,6.7,78,91,Henry Selick,"['Denise Di Novi', 'Tim Burton']",Randy Newman,"['Buena Vista Pictures', '(Global)', 'Guild Film Distribution', '(United Kingdom)']",1996
+62,The Hunchback of Notre Dame,91,100000000,325300000,1996/6/21,6.9,74,71,"['Gary Trousdale', 'Kirk Wise']",Don Hahn,Alan Menken,Buena Vista Pictures,1996
+63,First Kid,101,15000000,26491793,1996/8/30,5.3,48,20,David M. Evans,Roger Birnbaum,Richard Gibbs,Buena Vista Pictures,1996
+64,101 Dalmatians,103,75000000,320700000,1996/11/27,5.7,49,41,Stephen Herek,"['John Hughes', 'Ricardo Mestres']",Michael Kamen,Buena Vista Pictures Distribution,1996
+65,Jungle 2 Jungle,105,32000000,59900000,1997/3/7,5.2,42,19,John Pasquin,"['Richard Baker', 'Brad Krevoy']",Michael Convertino,"['Buena Vista Pictures', '(United States)', 'Ariane Films', '(France)']",1997
+66,Hercules,93,85000000,252700000,1997/6/13,7.3,74,84,"['Ron Clements', 'John Musker']","['Alice Dewey', 'Ron Clements', 'John Musker']",Alan Menken,Buena Vista Pictures Distribution,1997
+67,George of the Jungle,92,55000000,174400000,1997/7/16,5.5,53,56,Sam Weisman,"['David Hoberman', 'Jordan Kerner', 'Jon Avnet']",Marc Shaiman,Buena Vista Pictures,1997
+68,Flubber,93,80000000,178000000,1997/11/16,5.3,37,24,Les Mayfield,"['John Hughes', 'Ricardo Mestres']",Danny Elfman,Buena Vista Pictures,1997
+69,Mr. Magoo,87,30000000,28900000,1997/12/25,4,18,7,Stanley Tong,Ben Myron,Mike Tavera,Buena Vista Pictures,1997
+70,Mulan,87,90000000,304300000,1998/6/19,7.6,71,86,"['Barry Cook', 'Tony Bancroft']",Pam Coats,Jerry Goldsmith,Buena Vista Pictures,1998
+71,The Parent Trap,128,15000000,92100000,1998/7/29,6.5,64,86,Nancy Meyers,Charles Shyer,Alan Silvestri,Buena Vista Pictures Distribution,1998
+72,A Bug's Life,95,120000000,363300000,1998/11/20,7.2,77,92,John Lasseter,"['Darla K. Anderson', 'Kevin Reher']",Randy Newman,Buena Vista Pictures Distribution,1998
+73,Mighty Joe Young,114,90000000,50600000,1998/12/25,5.6,51,54,Ron Underwood,"['Ted Hartley', 'Tom Jacobson']",James Horner,Buena Vista Pictures,1998
+74,My Favorite Martian,93,65000000,36800000,1999/2/12,5.1,33,12,Donald Petrie,"['Jerry Leider', 'Robert Shapiro', 'Marc Toberoff']",John Debney,Buena Vista Pictures,1999
+75,Tarzan,88,130000000,448200000,1999/6/12,7.3,79,89,"['Kevin Lima', 'Chris Buck']",Bonnie Arnold,Mark Mancina,Buena Vista Pictures,1999
+76,Inspector Gadget,78,90000000,134400000,1999/7/23,4.1,36,21,David Kellogg,"['Roger Birnbaum', 'Andy Heyward', 'Jordan Kerner', 'Aaron Meyerson']",John Debney,Buena Vista Pictures Distribution,1999
+77,Toy Story 2,92,90000000,497400000,1999/11/13,7.9,88,100,John Lasseter,"['Helene Plotkin', 'Karen Robert Jackson']",Randy Newman,Buena Vista Pictures Distribution,1999
+78,Fantasia 2000,74,85000000,90900000,1999/12/16,7.2,59,81,"['Don Hahn', 'Pixote Hunt', 'Hendel Butoy', 'Eric Goldberg', 'James Algar', 'Francis Glebas', 'Paul and Ga¤òtan Brizzi']",Donald W. Ernst,See program,Buena Vista Pictures,1999
+79,Fantasia 2000,74,85000000,90900000,1999/12/17,7.2,59,81,"['Don Hahn', 'Pixote Hunt', 'Hendel Butoy', 'Eric Goldberg', 'James Algar', 'Francis Glebas', 'Paul and Ga¤òtan Brizzi']","['Roy E. Disney', 'Donald W. Ernst']",See program,Buena Vista Pictures,1999
+80,The Tigger Movie,77,15000000,96200000,2000/2/11,6.3,53,62,Jun Falkenstein,Cheryl Abood,Harry Gregson-Williams,Buena Vista Pictures,2000
+81,Dinosaur,82,127500000,349800000,2000/5/19,6.5,56,64,"['Ralph Zondag', 'Eric Leighton']",Pam Marsden,James Newton Howard,Buena Vista Pictures,2000
+82,Remember The Titans,113,30000000,136700000,2000/9/29,7.8,48,73,Boaz Yakin,"['Jerry Bruckheimer', 'Chad Oman']",Trevor Rabin,Buena Vista Pictures,2000
+83,102 Dalmatians,100,85000000,183600000,2000/11/22,4.9,35,31,Kevin Lima,Edward S. Feldman,David Newman,Buena Vista Pictures,2000
+84,The Emperor's New Groove,78,100000000,169300000,2000/12/15,7.3,70,85,Mark Dindal,Randy Fullmer,John Debney,Buena Vista Pictures,2000
+85,Recess: School's Out,83,23000000,44500000,2001/2/10,6.6,43,60,Chuck Sheetz,"['Joe Ansolabehere', 'Paul Germain', 'Stephen Swofford']",Denis M. Hannigan,Buena Vista Pictures,2001
+86,Atlantis: The Lost Empire,96,90000000,186100000,2001/6/3,6.9,52,49,"['Gary Trousdale', 'Kirk Wise']",Don Hahn,James Newton Howard,Buena Vista Pictures,2001
+87,The Princess Diaries,115,26000000,165300000,2001/8/3,6.3,52,48,Garry Marshall,"['Whitney Houston', 'Debra Martin Chase', 'Mario Iscovich']",John Debney,Buena Vista Pictures,2001
+88,Max Keeble's Big Move,86,25000000,18600000,2001/10/5,5.4,40,29,Tim Hill,Mike Karz,Michael Wandmacher,Buena Vista Pictures,2001
+89,"Monsters, Inc.",92,115000000,577400000,2001/10/28,8,79,96,Pete Docter,Darla K. Anderson,Randy Newman,Buena Vista Pictures Distribution,2001
+90,Snow Dogs,99,33000000,115000000,2002/1/18,5.2,29,25,Brian Levant,Jordan Kerner,John Debney,Buena Vista Pictures Distribution,2002
+91,Return to Never Land,73,20000000,115100000,2002/2/10,5.8,49,45,Robin Budd,"['Christopher Chase', 'Michelle Pappalardo-Robinson', 'Dan Rounds']","['Joel McNeely (Score)', 'They Might Be Giants (Songs)']",Buena Vista Pictures,2002
+92,The Rookie,128,22000000,80700000,2002/3/29,6.9,72,84,John Lee Hancock,"['Mark Ciardi', 'Gordon Gray', 'Mark Johnson']",Carter Burwell,Buena Vista Pictures,2002
+93,Lilo & Stitch,85,80000000,273100000,2002/6/21,7.2,73,86,"['Chris Sanders', 'Dean DeBlois']",Clark Spencer,Alan Silvestri,Buena Vista Pictures,2002
+94,The Country Bears,88,35000000,18000000,2002/7/21,4.1,37,31,Peter Hastings,"['Jeffrey Chernov', 'Andrew Gunn']",Christopher Young,Buena Vista Pictures,2002
+95,Tuck Everlasting,96,15000000,19300000,2002/10/11,6.6,66,60,Jay Russell,"['Marc Abraham', 'Jane Startz', 'Thomas Bliss']",William Ross,Buena Vista Pictures,2002
+96,The Santa Clause 2,104,65000000,172900000,2002/11/1,5.6,48,56,Michael Lembeck,"['Robert Newmyer', 'Brian Reilly', 'Jeffrey Silver']",George S. Clinton,Buena Vista Pictures Distribution,2002
+97,Treasure Planet,95,140000000,109600000,2002/11/27,7.2,60,69,"['Ron Clements', 'John Musker']","['Ron Clements', 'John Musker', 'Roy Conli']",James Newton Howard,Buena Vista Pictures,2002
+98,The Jungle Book 2,72,20000000,135700000,2003/2/14,5.4,38,19,Steve Trenbirth,"['Christopher Chase', 'Mary Thorne']",Joel McNeely,Buena Vista Pictures,2003
+99,Piglet's Big Movie,75,46000000,62900000,2003/3/16,6.1,62,70,Francis Glebas,Michelle Pappalardo-Robinson,"['Carl Johnson', 'Carly Simon']",Buena Vista Pictures,2003
+100,Ghosts of the Abyss,61,13000000,28700000,2003/3/31,6.8,67,80,James Cameron,"['John Bruno', 'James Cameron', 'Chuck Comisky', 'Janace Tashjian', 'Andrew Wight']",Joel McNeely,Buena Vista Pictures,2003
+101,Holes,117,20000000,71400000,2003/4/18,7,71,78,Andrew Davis,"['Andrew Davis', 'Lowell D. Blank', 'Mike Medavoy', 'Teresa Tucker-Davies']",Joel McNeely,Buena Vista Pictures,2003
+102,The Lizzie McGuire Movie,94,17000000,55500000,2003/5/2,5.5,56,41,Jim Fall,Stan Rogow,Cliff Eidelman,Buena Vista Pictures,2003
+103,Finding Nemo,100,94000000,940300000,2003/5/30,8.1,90,99,Andrew Stanton,Graham Walters,Thomas Newman,Buena Vista Pictures Distribution,2003
+104,Pirates of the Caribbean: The Curse of the Black Pearl,143,140000000,654300000,2003/6/28,8,63,79,Gore Verbinski,Jerry Bruckheimer,['Klaus Badelt'],Buena Vista Pictures Distribution,2003
+105,Freaky Friday,97,26000000,160800000,2003/8/4,6.2,70,88,Mark Waters,Andrew Gunn,Rolfe Kent,Buena Vista Pictures,2003
+106,Brother Bear,85,46000000,250400000,2003/11/1,6.8,48,37,"['Aaron Blaise', 'Robert Walker']",Chuck Williams,"['Phil Collins', 'Mark Mancina']",Buena Vista Pictures,2003
+107,The Haunted Mansion,86,90000000,182300000,2003/11/26,5,34,14,Rob Minkoff,"['Andrew Gunn', 'Don Hahn']",Mark Mancina,Buena Vista Pictures,2003
+108,Miracle,136,28000000,64500000,2004/2/6,7.5,68,81,Gavin O'Connor,"['Mark Ciardi', 'Gordon Gray', 'Ross Greenburg', 'Justis Greene', 'Jon Mone', ""Greg O'Connor""]",Mark Isham,Buena Vista Pictures,2004
+109,Confessions of a Teenage Drama Queen,89,15000000,33100000,2004/2/20,4.7,33,14,Sara Sugarman,"['Robert Shapiro', 'Jerry Leider']",Mark Mothersbaugh,Buena Vista Pictures,2004
+110,Home on the Range,76,110000000,145500000,2004/4/2,5.3,50,53,"['Will Finn', 'John Sanford']",Alice Dewey Goldstone,Alan Menken,Buena Vista Pictures,2004
+111,Around the World in 80 Days,120,110000000,72200000,2004/6/13,5.9,49,32,Frank Coraci,"['Bill Badalato', 'Hal Lieberman']","['Trevor Jones', 'David A. Stewart']",Buena Vista Pictures,2004
+112,The Princess Diaries 2: Royal Engagement,113,45000000,134700000,2004/8/11,5.8,43,26,Garry Marshall,"['Whitney Houston', 'Debra Martin Chase']",John Debney,Buena Vista Pictures,2004
+113,National Treasure,131,100000000,347500000,2004/11/19,6.9,39,46,Jon Turteltaub,"['Jerry Bruckheimer', 'Jon Turteltaub']",Trevor Rabin,Buena Vista Pictures,2004
+114,March of the Penguins,80,8000000,127400000,2005/1/26,7.5,79,94,Luc Jacquet,"['Yves Darondeau', 'Christophe Lioud', 'Emmanuel Priou']","['×Mmilie Simon (France)', 'Alex Wurman (US)']",Buena Vista International France,2005
+115,Pooh's Heffalump Movie,68,20000000,52900000,2005/2/11,6.4,64,80,Frank Nissen,Jessica Koplos-Miller,Joel McNeely,Buena Vista Pictures,2005
+116,The Pacifier,95,56000000,198600000,2005/3/4,5.6,30,21,Adam Shankman,"['Roger Birnbaum', 'Gary Barber', 'Jonathan Glickman']",John Debney,Buena Vista Pictures,2005
+117,Ice Princess,97,25000000,27600000,2005/3/18,6,55,52,Tim Fywell,Bridget Johnson,Christophe Beck,Buena Vista Pictures,2005
+118,Valiant,76,35000000,61700000,2005/3/25,5.5,45,32,Gary Chapman,"['John H. Williams', 'Barnaby Thompson (executive producer)']",George Fenton,"['Entertainment Film Distributors (UK)', 'Buena Vista Pictures (US)']",2005
+119,Herbie: Fully Loaded,101,50000000,144100000,2005/6/22,4.8,47,41,Angela Robinson,Robert Simonds,Mark Mothersbaugh,Buena Vista Pictures,2005
+120,Sky High,100,35000000,86400000,2005/7/29,6.2,62,73,Mike Mitchell,Andrew Gunn,Michael Giacchino,Buena Vista Pictures,2005
+121,The Greatest Game Ever Played,120,25000000,15400000,2005/9/30,7.4,55,63,Bill Paxton,"['David Blocker', 'Larry Brezner', 'Mark Frost']",Brian Tyler,Buena Vista Pictures,2005
+122,Chicken Little,81,150000000,314400000,2005/10/30,5.7,48,37,Mark Dindal,Randy Fullmer,John Debney,Buena Vista Pictures,2005
+123,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",143,180000000,745000000,2005/12/7,6.9,75,76,Andrew Adamson,"['Mark Johnson', 'Phillip Steuer']",Harry Gregson-Williams,Buena Vista Pictures,2005
+124,Glory Road,106,30000000,42900000,2006/1/13,7.2,58,100,James Gartner,['Jerry Bruckheimer'],Trevor Rabin,Buena Vista Pictures,2006
+125,Roving Mars,40,1000000,11000000,2006/1/27,7.2,58,71,George Butler,"['George Butler', 'Frank Marshall']","['Philip Glass', 'Sigur R?s']",Buena Vista Pictures,2006
+126,Eight Below,120,40000000,120500000,2006/2/17,7.3,64,73,Frank Marshall,"['Patrick Crowley', 'David Hoberman']",Mark Isham,Buena Vista Pictures,2006
+127,The Shaggy Dog,99,50000000,87100000,2006/3/10,4.4,43,26,Brian Robbins,"['David Hoberman', 'Tim Allen']",Alan Menken,Buena Vista Pictures,2006
+128,The Wild,82,80000000,102300000,2006/4/14,5.3,47,50,"Steve ""Spaz"" Williams","['Clint Goldman', 'Beau Flynn']",Alan Silvestri,Buena Vista Pictures,2006
+129,Cars,117,120000000,462000000,2006/5/26,7.1,73,75,John Lasseter,Darla K. Anderson,Randy Newman,Buena Vista Pictures Distribution,2006
+130,Pirates of the Caribbean: Dead Man's Chest,151,225000000,1066000000,2006/6/24,7.3,53,53,Gore Verbinski,Jerry Bruckheimer,Hans Zimmer,Buena Vista Pictures,2006
+131,Invincible,104,30000000,58500000,2006/8/25,7.1,63,72,Ericson Core,"['Gordon Gray', 'Mark Ciardi']",Mark Isham,Buena Vista Pictures,2006
+132,The Santa Clause 3: The Escape Clause,92,12000000,110800000,2006/11/3,4.7,32,17,Michael Lembeck,"['Robert Newmyer', 'Brian Reilly', 'Jeffrey Silver']",George S. Clinton,Buena Vista Pictures,2006
+133,Bridge to Terabithia,95,20000000,138000000,2007/2/16,7.1,74,85,G?bor Csup?,"['David L. Paterson', 'Lauren Levine', 'Hal Lieberman']",Aaron Zigman,"['Buena Vista Pictures Distribution', '(United States)', 'Summit Entertainment', '(International)']",2007
+134,Pirates of the Caribbean: At World's End,168,300000000,961000000,2007/5/19,7.1,50,44,Gore Verbinski,Jerry Bruckheimer,Hans Zimmer,Buena Vista Pictures,2007
+135,Ratatouille,111,150000000,620700000,2007/6/22,8,96,96,Brad Bird,Brad Lewis,Michael Giacchino,Buena Vista Pictures Distribution,2007
+136,Underdog,82,25000000,65300000,2007/8/3,4.7,37,14,Frederik Du Chau,"['Gary Barber', 'Roger Birnbaum', 'Jonathan Glickman', 'Jay Polstein']",Randy Edelman,Buena Vista Pictures Distribution,2007
+137,The Game Plan,110,22000000,146600000,2007/9/23,6.1,44,28,Andy Fickman,"['Mark Ciardi', 'Gordon Gray']",Nathan Wang,Buena Vista Pictures,2007
+138,Earth,99,47000000,109000000,2007/10/10,8,72,86,"['Alastair Fothergill', 'Mark Linfield']","['Alix Tidmarsh', 'Sophokles Tasioulius']","['George Fenton', 'Berliner Philharmoniker']","['Gaumount (France)', 'Lionsgate UK (United Kingdom)', 'Universum Film (Germany)', 'Walt Disney Studios Motion Pictures (United States)']",2007
+139,Enchanted,107,85000000,340500000,2007/10/20,7,75,93,Kevin Lima,"['Barry Josephson', 'Barry Sonnenfeld']",Alan Menken,"['Walt Disney Studios', 'Motion Pictures']",2007
+140,National Treasure: Book of Secrets,124,130000000,459200000,2007/12/21,6.5,48,36,Jon Turteltaub,"['Jerry Bruckheimer', 'Jon Turteltaub']",Trevor Rabin,Walt Disney Studios Motion Pictures,2007
+141,Hannah Montana and Miley Cyrus: Best of Both Worlds Concert,74,7000000,70600000,2008/2/1,2.4,59,71,Bruce Hendricks,Art Repola,"['Matthew Gerrard', 'Robbie Nevil', 'Miley Cyrus', 'Jamie Houston', 'Tim James']","['Walt Disney Studios', 'Motion Pictures']",2008
+142,College Road Trip,83,25000000,51500000,2008/3/7,4.3,36,12,Roger Kumble,Andrew Gunn,Edward Shearmur,"['Walt Disney Studios', 'Motion Pictures']",2008
+143,The Chronicles of Narnia: Prince Caspian,150,225000000,419700000,2008/5/7,6.5,62,67,Andrew Adamson,"['Mark Johnson', 'Andrew Adamson', 'Philip Steuer']",Harry Gregson-Williams,Walt Disney Studios Motion Pictures,2008
+144,WALL-E,97,180000000,533300000,2008/6/23,8.4,95,95,Andrew Stanton,Jim Morris,Thomas Newman,Walt Disney Studios Motion Pictures,2008
+145,Beverly Hills Chihuahua,91,20000000,149300000,2008/9/26,3.8,41,40,Raja Gosnell,"['David Hoberman', 'Todd Lieberman', 'John Jacobs', 'Ricardo Del R?o']",Heitor Pereira,"['Walt Disney Studios', 'Motion Pictures']",2008
+146,Beverly Hills Chihuahua,91,20000000,149300000,2008/10/3,3.8,41,40,Raja Gosnell,"['David Hoberman', 'Todd Lieberman', 'John Jacobs', 'Ricardo Del R?o']",Heitor Pereira,"['Walt Disney Studios', 'Motion Pictures']",2008
+147,Bolt,96,150000000,310000000,2008/11/21,6.8,67,89,"['Chris Williams', 'Byron Howard']",Clark Spencer,John Powell,"['Walt Disney Studios', 'Motion Pictures']",2008
+148,Bedtime Stories,99,80000000,212900000,2008/12/25,6,33,27,Adam Shankman,"['Adam Sandler', 'Andrew Gunn', 'Jack Giarraputo']",Rupert Gregson-Williams,"['Walt Disney Studios', 'Motion Pictures']",2008
+149,Race to Witch Mountain,98,50000000,106400000,2009/3/11,5.7,52,43,Andy Fickman,Andrew Gunn,Trevor Rabin,"['Walt Disney Studios', 'Motion Pictures']",2009
+150,Hannah Montana: The Movie,97,30000000,169.2,2009/4/10,4.5,47,43,Peter Chelsom,"['David Blocker', 'Billy Ray Cyrus', 'Alfred Gough', 'Miles Millar', 'Steven Peterman', 'Michael Poryes']",John Debney,Walt Disney Studios Motion Pictures,2009
+151,Up,96,175000000,735100000,2009/5/29,8.2,88,98,Pete Docter,Jonas Rivera,Michael Giacchino,"['Walt Disney Studios', 'Motion Pictures']",2009
+152,G-Force,90,150000000,292800000,2009/7/24,5.1,41,22,Hoyt H. Yeatman Jr.,Jerry Bruckheimer,Trevor Rabin,Walt Disney Studios Motion Pictures,2009
+153,Oceans,104,80000000,82700000,2009/10/17,7.8,75,81,"['Jacques Perrin', 'Jacques Cluzaud', '(co-director)']","['Jacques Perrin', 'Romain Legrand', 'Nicolas Mauvernay', 'Jake Eberts']",Bruno Coulais,Path­T Distribution,2009
+154,A Christmas Carol,96,175000000,325000000,2009/11/3,6.8,55,52,Robert Zemeckis,"['Steve Starkey', 'Robert Zemeckis', 'Jack Rapke']",Alan Silvestri,Walt Disney Studios Motion Pictures,2009
+155,The Princess and the Frog,97,105000000,269000000,2009/11/25,7.1,73,85,"['Ron Clements', 'John Musker']",Peter Del Vecho,Randy Newman,"['Walt Disney Studios', 'Motion Pictures']",2009
+156,Old Dogs,88,35000000,96800000,2009/11/25,5.4,19,5,Walt Becker,"['Andrew Panay', 'Robert L. Levy', 'Peter Abrams']",John Debney,"['Walt Disney Studios', 'Motion Pictures']",2009
+157,Alice in Wonderland,108,200000000,1025000000,2010/2/25,6.4,53,51,Tim Burton,"['Richard D. Zanuck', 'Joe Roth', 'Suzanne Todd', 'Jennifer Todd']",Danny Elfman,Walt Disney Studios Motion Pictures,2010
+158,Prince of Persia: The Sands of Time,116,150,336400000,2010/5/9,6.6,50,37,Mike Newell,Jerry Bruckheimer,Harry Gregson-Williams,"['Walt Disney Studios', 'Motion Pictures']",2010
+159,Toy Story 3,103,200000000,1067000000,2010/6/12,8.3,92,98,Lee Unkrich,Darla K. Anderson,Randy Newman,"['Walt Disney Studios', 'Motion Pictures']",2010
+160,The Sorcerer's Apprentice,109,150000000,215300000,2010/7/8,6.1,46,40,Jon Turteltaub,Jerry Bruckheimer,Trevor Rabin,"['Walt Disney Studios', 'Motion Pictures']",2010
+161,Arrietty,95,23000000,146000000,2010/7/17,7.6,80,95,Hiromasa Yonebayashi,Toshio Suzuki,C­Tcile Corbel,Toho,2010
+162,Secretariat,123,35000000,60300000,2010/9/30,7.2,61,63,Randall Wallace,"['Mark Ciardi', 'Gordon Gray']",Nick Glennie-Smith,"['Walt Disney Studios', 'Motion Pictures']",2010
+163,Tangled,100,260000000,592400000,2010/11/14,7.7,71,89,"['Nathan Greno', 'Byron Howard']",Roy Conli,Alan Menken,Walt Disney Studios Motion Pictures,2010
+164,Tron: Legacy,125,150000000,410000000,2010/11/30,6.8,49,51,Joseph Kosinski,"['Sean Bailey', 'Jeffrey Silver', 'Steven Lisberger']",Daft Punk,Walt Disney Studios Motion Pictures,2010
+165,Mars Needs Moms,88,150000000,39200000,2011/3/11,5.4,49,37,Simon Wells,"['Robert Zemeckis', 'Jack Rapke', 'Steve Starkey', 'Steven Boyd']",John Powell,"['Walt Disney Studios', 'Motion Pictures']",2011
+166,Winnie the Pooh,69,30000000,50100000,2011/4/6,7.2,74,91,"['Stephen J. Anderson', 'Don Hall']","['Peter Del Vecho', 'Clark Spencer']",Henry Jackman,"['Walt Disney Studios', 'Motion Pictures']",2011
+167,African Cats,89,5000000,30900000,2011/4/22,7.6,61,73,"['Alastair Fothergill', 'Keith Scholey']","['Alix Tidmarsh', 'Keith Scholey']",Nicholas Hooper,Walt Disney Studios Motion Pictures,2011
+168,Prom,104,8000000,10100000,2011/4/29,5.4,50,36,Joe Nussbaum,"['Ted Griffin', 'Justin Springer']",Deborah Lurie,"['Walt Disney Studios', 'Motion Pictures']",2011
+169,Pirates of the Caribbean: On Stranger Tides,137,410600000,1046000000,2011/5/7,6.6,45,33,Rob Marshall,"Jerry Bruckheimer , Neal H. Moritz",Hans Zimmer,"['Walt Disney Studios', 'Motion Pictures']",2011
+170,Cars 2,106,200000000,562100000,2011/6/18,6.1,57,39,John Lasseter,Denise Ream,Michael Giacchino,"['Walt Disney Studios', 'Motion Pictures']",2011
+171,The Muppets,103,45000000,165200000,2011/11/4,7.1,75,95,James Bobin,"['David Hoberman', 'Todd Lieberman']",Christophe Beck,"['Walt Disney Studios', 'Motion Pictures']",2011
+172,John Carter,132,306600000,284100000,2012/2/22,6.6,51,52,Andrew Stanton,"['Jim Morris', 'Colin Wilson', 'Lindsey Collins']",Michael Giacchino,"['Walt Disney Studios', 'Motion Pictures']",2012
+173,Chimpanzee,77,5000000,34800000,2012/4/20,7.2,57,76,"['Alastair Fothergill', 'Mark Linfield']","['Alastair Fothergill', 'Mark Linfield', 'Alix Tidmarsh']",Nicholas Hooper,Walt Disney Studios Motion Pictures,2012
+174,Brave,93,185000000,540400000,2012/6/10,7.1,69,78,"['Mark Andrews', 'Brenda Chapman']",Katherine Sarafian,Patrick Doyle,"['Walt Disney Studios', 'Motion Pictures']",2012
+175,The Odd Life of Timothy Green,104,25000000,56000000,2012/8/15,6.6,47,36,Peter Hedges,"['Scott Sanders', 'James Whitaker', 'Ahmet Zappa']",Geoff Zanelli,"['Walt Disney Studios', 'Motion Pictures']",2012
+176,Frankenweenie,87,39000000,81500000,2012/9/20,6.9,74,87,Tim Burton,"['Tim Burton', 'Allison Abbate']",Danny Elfman,Walt Disney Studios Motion Pictures,2012
+177,Wreck-It Ralph,101,165000000,471200000,2012/10/29,7.7,72,87,Rich Moore,Clark Spencer,Henry Jackman,Walt Disney Studios Motion Pictures,2012
+178,Oz the Great and Powerful,130,200000000,493300000,2013/2/14,6.3,44,57,Sam Raimi,Joe Roth,Danny Elfman,"['Walt Disney Studios', 'Motion Pictures']",2013
+179,Monsters University,104,200000000,743600000,2013/6/5,7.3,65,80,Dan Scanlon,Kori Rae,Randy Newman,"['Walt Disney Studios', 'Motion Pictures']",2013
+180,The Lone Ranger,149,225000000,260500000,2013/6/22,6.4,37,30,Gore Verbinski,"['Jerry Bruckheimer', 'Gore Verbinski']",Hans Zimmer,"['Walt Disney Studios', 'Motion Pictures']",2013
+181,Planes,92,50000000,239300000,2013/8/2,5.7,39,25,Klay Hall,Tracy Balthazor-Flynn,Mark Mancina,"['Walt Disney Studios', 'Motion Pictures']",2013
+182,Saving Mr. Banks,125,35000000,117900000,2013/10/20,7.5,65,79,John Lee Hancock,"['Alison Owen', 'Ian Collie', 'Philip Steuer']",Thomas Newman,"['Walt Disney Studios', 'Motion Pictures']",2013
+183,Frozen,102,150000000,1280000000,2013/11/19,7.4,75,90,"['Chris Buck', 'Jennifer Lee']",Peter Del Vecho,"['Christophe Beck', 'Robert Lopez', 'Kristen Anderson-Lopez']","['Walt Disney Studios', 'Motion Pictures']",2013
+184,Muppets Most Wanted,107,51000000,80400000,2014/3/11,6.4,61,80,James Bobin,"['David Hoberman', 'Todd Lieberman']",Christophe Beck,Walt Disney Studios Motion Pictures,2014
+185,Bears,77,5000000,21300000,2014/4/18,7.4,68,90,"['Alastair Fothergill', 'Keith Scholey']",,George Fenton,Walt Disney Studios Motion Pictures,2014
+186,Million Dollar Arm,124,25000000,39200000,2014/5/6,7,56,65,Craig Gillespie,"['Joe Roth', 'Mark Ciardi', 'Gordon Gray']",A. R. Rahman,Walt Disney Studios Motion Pictures,2014
+187,Maleficent,97,180000000,758500000,2014/5/28,7,56,54,Robert Stromberg,Joe Roth,James Newton Howard,Walt Disney Studios Motion Pictures,2014
+188,Planes: Fire & Rescue,84,50000000,147000000,2014/7/15,6,48,44,Bobs Gannaway,Ferrell Barron,Mark Mancina,"['Walt Disney Studios', 'Motion Pictures']",2014
+189,"Alexander and the Terrible, Horrible, No Good, Very Bad Day",81,28000000,100700000,2014/10/6,6.2,54,61,Miguel Arteta,"['Shawn Levy', 'Dan Levine', 'Lisa Henson']",Christophe Beck,"['Walt Disney Studios', 'Motion Pictures']",2014
+190,Big Hero 6,102,165000000,657800000,2014/10/23,7.8,74,89,"['Don Hall', 'Chris Williams']",Roy Conli,Henry Jackman,"['Walt Disney Studios', 'Motion Pictures']",2014
+191,Into the Woods,124,50000000,213100000,2014/12/8,5.9,69,71,Rob Marshall,"['Rob Marshall', 'John DeLuca', 'Marc Platt', 'Callum McDougall']",Stephen Sondheim,"['Walt Disney Studios', 'Motion Pictures']",2014
+192,"McFarland, USA",129,25000000,45700000,2015/2/9,7.4,60,81,Niki Caro,"['Gordon Gray', 'Mark Ciardi']",Ant¤\nio Pinto,"['Walt Disney Studios', 'Motion Pictures']",2015
+193,Cinderella,106,95000000,542400000,2015/2/13,6.9,67,84,Kenneth Branagh,"['Simon Kinberg', 'Allison Shearmur', 'David Barron']",Patrick Doyle,"['Walt Disney Studios', 'Motion Pictures']",2015
+194,Monkey Kingdom,82,5000000,17100000,2015/4/17,7.3,72,93,"['Mark Linfield', 'Alastair Fothergill']","['Mark Linfield', 'Alastair Fothergill']",Harry Gregson-Williams,Walt Disney Studios Motion Pictures,2015
+195,Tomorrowland,130,180000000,209000000,2015/5/9,6.4,60,50,Brad Bird,"['Damon Lindelof', 'Brad Bird', 'Jeffrey Chernov']",Michael Giacchino,"['Walt Disney Studios', 'Motion Pictures']",2015
+196,Inside Out,94,175000000,858000000,2015/5/18,8.1,94,98,Pete Docter,Jonas Rivera,Michael Giacchino,"['Walt Disney Studios', 'Motion Pictures']",2015
+197,The Good Dinosaur,94,175000000,332200000,2015/11/10,6.7,66,76,Peter Sohn,Denise Ream,"['Mychael Danna', 'Jeff Danna']","['Walt Disney Studios', 'Motion Pictures']",2015
+198,The Finest Hours,117,70000000,52100000,2016/1/25,6.8,58,63,Craig Gillespie,"['Jim Whitaker', 'Dorothy Aufiero']",Carter Burwell,"['Walt Disney Studios', 'Motion Pictures']",2016
+199,Zootopia,108,150000000,1024000000,2016/2/13,8,78,98,"['Byron Howard', 'Rich Moore']",Clark Spencer,Michael Giacchino,"['Walt Disney Studios', 'Motion Pictures']",2016
+200,The Jungle Book,106,175000000,966600000,2016/4/4,7.4,77,94,Jon Favreau,"['Jon Favreau', 'Brigham Taylor']",John Debney,"['Walt Disney Studios', 'Motion Pictures']",2016
+201,Alice Through the Looking Glass,113,170000000,300000000,2016/5/10,6.2,34,29,James Bobin,"['Joe Roth', 'Suzanne Todd', 'Jennifer Todd', 'Tim Burton']",Danny Elfman,"['Walt Disney Studios', 'Motion Pictures']",2016
+202,The BFG,117,140000000,195200000,2016/5/14,6.4,66,74,Steven Spielberg,"['Steven Spielberg', 'Frank Marshall', 'Sam Mercer']",John Williams,"['Walt Disney Studios', 'Motion Pictures', '(Worldwide)', 'Mister Smith Entertainment', '(', 'EMEA', ')']",2016
+203,Finding Dory,97,175000000,1029000000,2016/6/8,7.3,77,94,Andrew Stanton,Lindsey Collins,Thomas Newman,"['Walt Disney Studios', 'Motion Pictures']",2016
+204,Pete's Dragon,103,65000000,143700000,2016/8/8,6.7,71,88,David Lowery,James Whitaker,Daniel Hart,Walt Disney Studios Motion Pictures,2016
+205,Born in China,76,5000000,25100000,2016/8/12,7.2,57,85,Lu Chuan,"['Roy Conli', 'Brian Leith', 'Phil Chapman']",Barnaby Taylor,"['Walt Disney Studios Motion Pictures', 'Shanghai Media Group', '(China)']",2016
+206,Queen of Katwe,124,15000000,10400000,2016/9/10,7.4,73,93,Mira Nair,"['John Carls', 'Lydia Dean Pilcher']",Alex Heffes,"['Walt Disney Studios', 'Motion Pictures']",2016
+207,Moana,107,150000000,690800000,2016/11/14,7.6,81,95,"['Ron Clements', 'John Musker']",Osnat Shurer,"['Mark Mancina', 'Lin-Manuel Miranda', ""Opetaia Foa'i""]","['Walt Disney Studios', 'Motion Pictures']",2016
+208,Beauty and the Beast,129,160000000,1264000000,2017/2/23,8,95,94,Bill Condon,"['David Hoberman', 'Todd Lieberman']",Alan Menken,"['Walt Disney Studios', 'Motion Pictures']",2017
+209,Pirates of the Caribbean: Dead Men Tell No Tales,129,230000000,794900000,2017/5/11,6.6,39,29,"['Joachim R?nning', 'Espen Sandberg']",Jerry Bruckheimer,Geoff Zanelli,"['Walt Disney Studios', 'Motion Pictures']",2017
+210,Cars 3,102,175000000,383900000,2017/5/23,6.7,59,70,Brian Fee,Kevin Reher,Randy Newman,"['Walt Disney Studios', 'Motion Pictures']",2017
+211,Coco,105,175000000,807100000,2017/10/20,8.4,81,97,Lee Unkrich,Darla K. Anderson,Michael Giacchino,"['Walt Disney Studios', 'Motion Pictures']",2017
+212,A Wrinkle in Time,109,100000000,133400000,2018/2/26,4.2,53,42,Ava DuVernay,"['Jim Whitaker', 'Catherine Hand']",Ramin Djawadi,"['Walt Disney Studios', 'Motion Pictures']",2018
+213,Incredibles 2,118,200000000,1243000000,2018/6/5,7.6,80,93,Brad Bird,"['John Walker', 'Nicole Paradis Grindle']",Michael Giacchino,"['Walt Disney Studios', 'Motion Pictures']",2018
+214,The Nutcracker and the Four Realms,99,120000000,174000000,2018/10/29,5.5,39,32,"['Lasse HallstrªTm', 'Joe Johnston']","['Mark Gordon', 'Larry Franco']",James Newton Howard,Walt Disney Studios Motion Pictures,2018
+215,Ralph Breaks the Internet,112,175000000,529300000,2018/11/5,7.1,71,88,"['Rich Moore', 'Phil Johnston']",Clark Spencer,Henry Jackman,Walt Disney Studios Motion Pictures,2018
+216,Mary Poppins Returns,131,130000000,349500000,2018/11/29,6.7,66,79,Rob Marshall,"['Rob Marshall', 'John DeLuca', 'Marc Platt']",Marc Shaiman,"['Walt Disney Studios', 'Motion Pictures']",2018
+217,Dumbo,112,170000000,353300000,2019/3/11,7.2,96,98,Tim Burton,"['Justin Springer', 'Ehren Kruger', 'Katterli Frauenfelder', 'Derek Frey']",Danny Elfman,"['Walt Disney Studios', 'Motion Pictures']",2019
+218,Toy Story 4,100,200000000,1073000000,2019/6/11,7.8,84,97,Josh Cooley,"['Mark Nielsen', 'Jonas Rivera']",Randy Newman,"['Walt Disney Studios', 'Motion Pictures']",2019
+219,The Lion King,118,250000000,1657000000,2019/7/9,8.5,88,93,Jon Favreau,"['Jon Favreau', 'Jeffrey Silver', 'Karen Gilchrist']",Hans Zimmer,"['Walt Disney Studios', 'Motion Pictures']",2019
+220,Maleficent: Mistress of Evil,119,185000000,491700000,2019/10/18,6.6,43,40,Joachim R?nning,"['Joe Roth', 'Angelina Jolie', 'Duncan Henderson']",Geoff Zanelli,"['Walt Disney Studios', 'Motion Pictures']",2019
+221,Frozen II,103,150000000,1450000000,2019/11/7,6.9,64,77,"['Chris Buck', 'Jennifer Lee']",Peter Del Vecho,"['Christophe Beck', 'Robert Lopez', 'Kristen Anderson-Lopez']","['Walt Disney Studios', 'Motion Pictures']",2019
+222,Onward,102,175000000,136400000,2020/2/21,7.4,61,88,Dan Scanlon,Kori Rae,"['Mychael Danna', 'Jeff Danna']","['Walt Disney Studios', 'Motion Pictures']",2020
+223,Mulan,115,200000000,57000000,2020/3/9,7.6,71,86,Niki Caro,"['Chris Bender', 'Jake Weiner', 'Jason T. Reed']",Harry Gregson-Williams,Walt Disney Studios Motion Pictures,2020
