@@ -2,7 +2,7 @@
 
 | Student's name | SCIPER |
 | -------------- | ------ |
-| Lin, Yuanhui   | |
+| Lin, Yuanhui   | 321352|
 | Zhou, Runke    | 322308|
 | Di, Yao        | 255619|
 
