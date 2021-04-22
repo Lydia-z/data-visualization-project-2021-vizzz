@@ -75,19 +75,11 @@ Another important statistic about movies is people interacting in a movie. Peopl
 
 ### Related work
 
-#### What others have already done with the data?
-We found the following project which has been done with the same dataset.
+We found the following project which has been done with the same dataset. The visualization in this project only focus on the ratings, release date and profit of the movies.
 * [Data Visualization for Disney Movies](https://public.tableau.com/profile/maliha.momtaz#!/vizhome/DisneyMovies_16147213546350/DisneyMovies)
 
+We did not find any interactive visualization website including all the features we planned to implement in our scenes. We will try to make the visualization more interesting, more informative and smoother in terms of interaction. To achieve the goals, different kinds of interactions will be implenmented. The inspiration of these implements come from the examples we see from Data Visualization class. For example, the top movie ranking part is inspired by the Beatles case shown. We will also have a section where user can pick his or her favored Disney character, this is inspired by the red wine case shown.
 
-#### Why is your approach original?
-We did not find any interactive visualization website including all the features we planned to implement in our scenes. 
-
-#### What source of inspiration do you take?
-The top movie ranking part is inspired by the Beatles case shown in the class 
-The interactive part is inspired by the red wine case shown in the class
-
-#### Visualizations that you found on other websites or magazines?
 We found the following visualization project which could be done with a similar topic. 
 * [Data Visualization for Gender Inequality in Disney Films](https://www.aberdeen.com/featured/blog-data-visualization-disney-intent/)
 * [Disney Movies 1937-2016 Gross Income](https://www.kaggle.com/discussion/225933)
