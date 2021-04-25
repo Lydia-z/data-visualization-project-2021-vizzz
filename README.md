@@ -2,8 +2,8 @@
 
 | Student's name | SCIPER |
 | -------------- | ------ |
-| Lin, Yuanhui   | |
-| Zhou, Runke    | |
+| Lin, Yuanhui   | 321352|
+| Zhou, Runke    | 322308|
 | Di, Yao        | 255619|
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
@@ -12,16 +12,8 @@
 
 **10% of the final grade**
 
-This is a preliminary milestone to let you set up goals for your final project and assess the feasibility of your ideas.
-Please, fill the following sections about your project.
-
-*(max. 2000 characters per section)*
 
 ### Dataset
-
-> Find a dataset (or multiple) that you will explore. Assess the quality of the data it contains and how much preprocessing / data-cleaning it will require before tackling visualization. We recommend using a standard dataset as this course is not about scraping nor data processing.
->
-> Hint: some good pointers for finding quality publicly available datasets ([Google dataset search](https://datasetsearch.research.google.com/), [Kaggle](https://www.kaggle.com/datasets), [OpenSwissData](https://opendata.swiss/en/), [SNAP](https://snap.stanford.edu/data/) and [FiveThirtyEight](https://data.fivethirtyeight.com/)), you could use also the DataSets proposed by the ENAC (see the Announcements section on Zulip).
 
 The datasets we would like to explore are from Kaggle, we found three datasets related to Disney movies, including:
 * [Walt Disney Movies - Soaibuzzaman](https://www.kaggle.com/sooaaib/walt-disney-movies?select=disney_movies.csv)
@@ -40,10 +32,6 @@ As original datasets contain a large number of features, we only select the feat
 
 ### Problematic
 
-> Frame the general topic of your visualization and the main axis that you want to develop.
-> - What am I trying to show with my visualization?
-> - Think of an overview for the project, your motivation, and the target audience.
-
 The topic of our visualization project is to explore movies from Disney. The current scenes have been designed as following
 * The audience will check our visualization through the standard Disney title sequence. The main page of the visualization will conclude the most popular movies from Disney, their issue timeline. The user click will trigger the theme song of the corresponding movie. 
 * The second scene is designed to be an interactive page about the main characters. The audience will be allowed to choose their favorite character from a given list. The chosen character will be colored and a visualization page of the most popular characters will appear. 
@@ -58,16 +46,43 @@ The target audience persona is
 
 ### Exploratory Data Analysis
 
-> Pre-processing of the data set you chose
-> - Show some basic statistics and get insights about the data
+#### Pre-processing of the data set you chose
+
+  In order to get as much information as we can, we choose to merge the three datasets and get a final dataset to be used in this project. To merge datasets, we drop duplicate data according to the movie title and release date. The final dataset is organized according to the release date. Then we drop all data that has null values excluded Directed by, Produced by, Music By, and Distributed by for data visualization purposes.  Then we reset the index and get the final dataset.
+ 
+#### Show some basic statistics and get insights about the data
+
+  According to our final dataset, we analyze the data from five aspects. 
+* Analysis of running time:
+
+  Through analyzing the running time of Disney movies. We find that the shortest Disney movie is Roving Mars and the longest Disney movie is Pirates of the Caribbean: At World's End. We also analyze the running time distribution of Disney movies.
+  
+* Analysis of Budget and Box Office:
+
+  Through analyzing the budget and box office of Disney movies, we find the Disney movie with the least and most budget and box office. What’s more, we make a plot of the budget and box office of each movie in a time sequence. Through this plot, we can observe an obvious increase in box office concerning time.
+  
+* From a historical aspect:
+
+  Within the 80-year history of Disney movies, we want to have a better understanding of the timeline of Disney movies. Thus we draw the graph which describes how many movies are released each year. According to the graph, we can find that most Disney movies were released after the 1990s. 
+  
+* Analysis of Ratings:
+
+  One of the most important features of movies is the ratings. In our final dataset, we have three ratings for a movie, IMDb, Metascore, and rotten_tomatoes. We also derive the distribution of these three kinds of ratings for all Disney movies.
+  
+* Analysis of People:
+
+Another important statistic about movies is people interacting in a movie. People interacting in a movie include directors, producers, musicians, and distributors. Through this analysis, we can have a better understanding of who took part in more Disney movies.
 
 ### Related work
 
+We found the following project which has been done with the same dataset. The visualization in this project only focus on the ratings, release date and profit of the movies.
+* [Data Visualization for Disney Movies](https://public.tableau.com/profile/maliha.momtaz#!/vizhome/DisneyMovies_16147213546350/DisneyMovies)
 
-> - What others have already done with the data?
-> - Why is your approach original?
-> - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data).
-> - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class.
+We did not find any interactive visualization website including all the features we planned to implement in our scenes. We will try to make the visualization more interesting, more informative and smoother in terms of interaction. To achieve the goals, different kinds of interactions will be implenmented. The inspiration of these implements comes from the examples we see from Data Visualization class. For example, the top movie ranking part is inspired by the Beatles case shown. We will also have a section where user can pick his or her favored Disney character, this is inspired by the red wine case shown.
+
+Apart from the project which uses the same database as we do, we also found the following visualization projects with a similar topic. 
+* [Disney Movies by Year and Type - Nicole](https://public.tableau.com/profile/nicole1574#!/vizhome/DisneyMovies2/Dashboard1)
+* [Disney Films Visualization - Bushra Nadeem](https://public.tableau.com/profile/b.humanadeem#!/vizhome/DisneyFilms_15931097490060/DisneyFilms)
 
 ## Milestone 2 (7th May, 5pm)
 
