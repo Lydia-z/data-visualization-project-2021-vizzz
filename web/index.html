@@ -7,18 +7,87 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Disney Movie Viz</title>
-    <link href="css/style.css" rel="stylesheet">
+	<link rel="icon" href="data/icons8-disney-movies-64.png">
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 </head>
 <body>
 
-<div>Disneyland animation + famous movies timeline + theme music</div>
-<div> choose your favorite characters + most famous characters</div>
-<div>visualization of budget and box office</div>
-<div> about people...</div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+		<a class="navbar-brand">
+			<img src="data/icons8-disney-movies-64.png"  width="40" height="40">
+			<span class="navbar-text" style="font-family: 'Comic Sans MS', cursive;"> Disney Movie Viz</span>
+		</a>
 
 
-<script src="lib/d3.min.js"></script>
+		<div class="d-flex">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="#characters">Characters</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#mostFamous">Popularity</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#money">Budget & Box Office</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#people">People</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<video autoplay muted poster="data/background.JPG" id="bgvideo">
+		<source src="data/disney.mp4" type="video/mp4">
+	</video>
+
+	<a id="welcome_button" href="#characters">
+		Welcome to Disney World... explore >>
+	</a>
+	<script>
+		var video = document.getElementById('bgvideo');
+		video.onended = function() {
+			document.getElementById('welcome_button').style.visibility = 'visible';
+		};
+	</script>
+
+	<section id="characters">
+		<hr>
+		<h2>What's your favoriate Disney character?</h2>
+		<p>blablabla</p>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	</section>
+
+	<section id="mostFamous">
+		<hr>
+		<h2>Most famous Disney movies</h2>
+		<p>blablabla</p>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	</section>
+
+	<section id="money">
+		<hr>
+		<h2>Budget and box office</h2>
+		<p>blablabla</p>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	</section>
+
+	<section id="people">
+		<hr>
+		<h2>Directors and Producers...</h2>
+		<p>blablabla</p>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	</section>
+</div>
+
+
+<script src="lib/d3/d3.min.js"></script>
 <script src="js/header.js"></script>
 </body>
 </html>
