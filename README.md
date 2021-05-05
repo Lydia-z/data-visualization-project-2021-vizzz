@@ -88,7 +88,7 @@ Apart from the project which uses the same database as we do, we also found the 
 
 The report for Milestone 2 could be found with the following link: [Report Milestone 2](https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz/blob/master/Report/Report%20Milestone%202.pdf)
 
-The skeleton code could be found in the web folder: [Skeleton Code](https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz/tree/master/web)
+The skeleton code could be found in the `web` folder: [Skeleton Code](https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz/tree/master/web)
 
 ## Milestone 3 (4th June, 5pm)
 
