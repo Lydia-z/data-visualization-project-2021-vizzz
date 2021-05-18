@@ -1,6 +1,6 @@
-//the button will show after 6 seconds
+//the button will show after 7 seconds
 var button = document.getElementById('welcome_button');
-var sec = 6;
+var sec = 7;
 var intervalId = undefined;
 var intervalId = setInterval(function(){
 	if (sec < 1) {

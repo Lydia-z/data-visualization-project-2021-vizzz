@@ -79,6 +79,25 @@ section::before {
   display: flex;
 }
 
+.paint {
+  position: absolute;
+  filter: grayscale(100%);
+}
+.paint:hover {
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+}
+#respond {
+  position:absolute;
+  width:45%; 
+  height:8%; 
+  top:50%;
+  left:28%;
+  font-size: 30px;
+  color: #9035c4;
+}
+
 .top6 {
   position: absolute;
 }

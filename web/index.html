@@ -57,8 +57,21 @@
 		<div class="slider">
 			<div class="slides">
 				<div class="slide" id="slide-1">
-					<h2>What is your favorite Disney character?</h2>
-					
+					<h2>Which is your favorite Disney character?</h2>
+					<img class='paint' onclick="color(this.id)" id='paint_0' src='data/1_1.png' style='width:15%;height:37%;top:55%;left:10%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_1' src='data/1_2.png' style='width:10%;height:40%;top:55%;left:75%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_2' src='data/1_3.png' style='width:10%;height:27%;top:13%;left:13%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_3' src='data/1_4.png' style='width:14%;height:23%;top:17%;left:33%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_4' src='data/1_5.png' style='width:12%;height:28%;top:67%;left:33%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_5' src='data/1_6.png' style='width:18%;height:25%;top:15%;left:72%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_6' src='data/1_7.png' style='width:15%;height:28%;top:13%;left:52%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_7' src='data/1_8.png' style='width:13%;height:26%;top:68%;left:55%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_8' src='data/1_9.png' style='width:6%;height:18%;top:43%;left:5%'/>
+					<img class='paint' onclick="color(this.id)" id='paint_9' src='data/1_10.png' style='width:14%;height:25%;top:40%;left:85%'/>
+
+					<div id='respond'>
+						Click to color your favorite character. 
+					</div>
 				</div>
 				<div class="slide" id="slide-2">
 					<h2>Top 6 popular characters</h2>
@@ -72,7 +85,7 @@
 						<h3 id='char_rank'></h3>
 						<div id='char_fact'></div>
 						<div id='char_comment'><br><br><br><br><br><br>Among all the Disney characters, who is favored by most people? The top 6 popular characters presented are from the voting result <a id='rank_link' href='https://www.thetoptens.com/disney/disney-characters/' target="_blank">here</a>. The results may be different from one ranking to another, but hey, Mickey Mouse is always the top one!
-						<br>Click the character to see people's comments!</div>
+						<br>Click the character to see people's comments.</div>
 					</div>
 				</div>
 			</div>
@@ -106,6 +119,6 @@
 <script src="lib/d3/d3.min.js"></script>
 <script src="js/header.js"></script>
 <script src="js/top6.js"></script>
-<script src="js/chooes_character.js"></script>
+<script src="js/color_character.js"></script>
 </body>
 </html>
