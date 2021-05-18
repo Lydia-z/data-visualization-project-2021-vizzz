@@ -19,7 +19,7 @@
 	<div class="container">
 		<a class="navbar-brand">
 			<img src="data/icons8-disney-movies-64.png"  width="40" height="40">
-			<span class="navbar-text" style="font-family: 'Comic Sans MS', cursive;"> Disney Movie Viz</span>
+			<span class="navbar-text"> Disney Movie Viz</span>
 		</a>
 
 
@@ -50,33 +50,34 @@
 	<a id="welcome_button" href="#characters">
 		Welcome to Disney World... explore >>
 	</a>
-	<!-- the button will show after the video finish playing-->
-	<!--<script>
-		var video = document.getElementById('bgvideo');
-		video.onended = function() {
-			document.getElementById('welcome_button').style.visibility = 'visible';
-		};
-	</script>-->
-
-	<!-- the button will show after 6 seconds-->
-	<script type="text/javascript">
-		var button = document.getElementById('welcome_button');
-		var sec = 6;
-		var intervalId = undefined;
-		var intervalId = setInterval(function(){
-			if (sec < 1) {
-				clearInterval(intervalId);
-				document.getElementById('welcome_button').style.visibility = 'visible';
-			}
-			sec--;
-		}, 1000);
-	</script>
 
 	<section id="characters">
 		<hr>
-		<h2>What's your favoriate Disney character?</h2>
-		<p>blablabla</p>
-		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+				
+		<div class="slider">
+			<div class="slides">
+				<div class="slide" id="slide-1">
+					<h2>What is your favorite Disney character?</h2>
+					
+				</div>
+				<div class="slide" id="slide-2">
+					<h2>Top 6 popular characters</h2>
+					<img class='top6' id='character_1' src='data/1_mickymouse.png' style='width:25%;height:50%;top:20%;left:20%'/>
+					<img class='top6' id='character_2' src='data/2_donaldduck.png' style='width:17%;height:40%;top:40%;left:40%'/>
+					<img class='top6' id='character_3' src='data/3_genie.png' style='width:20%;height:35%;top:10%;left:8%'/>
+					<img class='top6' id='character_4' src='data/4_snowwhite.png' style='width:15%;height:30%;top:50%;left:8%'/>
+					<img class='top6' id='character_5' src='data/5_goofy.png' style='width:17%;height:25%;top:70%;left:20%'/>
+					<img class='top6' id='character_6' src='data/6_simba.png' style='width:8%;height:15%;top:15%;left:40%'/>
+					<div id='top6_text'>
+						<h3 id='char_rank'></h3>
+						<div id='char_fact'></div>
+						<div id='char_comment'><br><br><br><br><br><br>Among all the Disney characters, who is favored by most people? The top 6 popular characters presented are from the voting result <a id='rank_link' href='https://www.thetoptens.com/disney/disney-characters/' target="_blank">here</a>. The results may be different from one ranking to another, but hey, Mickey Mouse is always the top one!
+						<br>Click the character to see people's comments!</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<section id="mostFamous">
@@ -104,5 +105,7 @@
 
 <script src="lib/d3/d3.min.js"></script>
 <script src="js/header.js"></script>
+<script src="js/top6.js"></script>
+<script src="js/chooes_character.js"></script>
 </body>
 </html>
