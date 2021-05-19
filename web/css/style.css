@@ -1,3 +1,17 @@
+/*
+Black
+#211522
+
+Orchid
+#613659
+
+Lavender
+#C197D2
+
+Mauve
+#D3B1C2
+*/
+
 body {
 	background-color: black;
 	color: #c3c0cf;
@@ -17,7 +31,7 @@ video {
 #welcome_button{
 	visibility: hidden;
 	position: absolute;
-	top: 88%;
+	top: 80%;
 	left: 40%;
 	color: #c3c0cf;
 }
@@ -129,4 +143,45 @@ section::before {
   color: white;
   text-align: left;
   font: bold;
+}
+
+.btn-group{
+  position: absolute;
+  height: 7%;
+  width: auto;
+  top: 13%;
+}
+
+.btn-group button {
+  border: 1px #211522;
+  color: white;
+  padding: 8px 13px;
+  cursor: pointer;
+}
+#www_0{
+  background-color: #613659;
+}
+#www_1{
+  background-color: #C197D2;
+}
+#www_2{
+  background-color: #D3B1C2;
+}
+#www_0:hover{
+  background-color: #211522;
+}
+#www_1:hover{
+  background-color: #211522;
+}
+#www_2:hover{
+  background-color: #211522;
+}
+
+
+#who_ww {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 20%;
+  /*background-color: darkblue;*/
 }
