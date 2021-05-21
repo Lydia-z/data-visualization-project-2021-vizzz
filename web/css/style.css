@@ -185,3 +185,15 @@ section::before {
   top: 20%;
   /*background-color: darkblue;*/
 }
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 3px 5px 3px 5px;
+  font: 0.5em sans-serif;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #211522;
+}

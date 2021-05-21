@@ -1,6 +1,8 @@
 var svg = d3.select("#who_ww"),
     width = svg.node().getBoundingClientRect().width,
     height = svg.node().getBoundingClientRect().height;
+
+var tooltip = d3.select("#tooltip").style("opacity", 0.8);
 //console.log(svg.node()); // svg.node() return the <svg> element and everything inside
 
 var datas = ["data/directors.json","data/producers.json","data/music_directors.json"];
@@ -10,40 +12,40 @@ var buttonid;
 var graph;
 
 function loadData(button_id){
-  buttonid = button_id;
-  var ind = parseInt(button_id.split("_")[1]);
+    buttonid = button_id;
+    var ind = parseInt(button_id.split("_")[1]);
 
-  // clean up svg
-  svg.selectAll('*').remove();
+    // clean up svg
+    svg.selectAll('*').remove();
 
-  // load the data
-  d3.json(datas[ind], function(error, data) {
-    if (error) throw error;
-    graph = data;
-    drawSVG(graph, colors[ind]);
-    setSimulation(graph);
+    // load the data
+    d3.json(datas[ind], function(error, data) {
+        if (error) throw error;
+        graph = data;
+        setSimulation(graph);
+        drawSVG(graph, colors[ind]);
   });
 }
 
 // init force simulation
 var simulation = d3.forceSimulation()
         .force("link", d3.forceLink())
-        .force("charge", d3.forceManyBody(-240))
+        .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter());
 
 // set up the simulation
 function setSimulation(graph) {
-  simulation.nodes(graph.nodes);
-  updateForces(graph);
-  simulation.on("tick", ticked);
+    simulation.nodes(graph.nodes);
+    updateForces(graph);
+    simulation.on("tick", ticked);
 }
 
 // apply new force properties
 function updateForces(graph) {
     // get each force by name and update the properties
     simulation.force("center")
-        .x(width/2)
-        .y(height/2);
+              .x(width/2)
+              .y(height/2);
     simulation.force("link")
         .id(function(d) {return d.name;})
         .distance(20)
@@ -52,8 +54,8 @@ function updateForces(graph) {
 }
 
 function drawSVG(graph, color) {
-  // set the data and properties of link lines
-  svg_link = svg.append("g")
+    // set the data and properties of link lines
+    svg_link = svg.append("g")
             .selectAll("line")
             .data(graph.links)
             .enter().append("line")
@@ -61,8 +63,8 @@ function drawSVG(graph, color) {
             .attr("stroke-width", function(d) {return d.weight;})
             .attr("opacity", 0.5);
 
-  // set the data and properties of node circles
-  svg_node = svg.append("g")
+    // set the data and properties of node circles
+    svg_node = svg.append("g")
             .selectAll("circle")
             .data(graph.nodes)
             .enter().append("circle")
@@ -74,9 +76,8 @@ function drawSVG(graph, color) {
                 .on("start", dragstarted)
                 .on("drag", dragged)
                 .on("end", dragended));
-
-  svg_node.append("title")
-      .text(function(d) { return d.name+" with "+d.count+" movies."; });
+    svg_node.on('mouseover', mouseOver)
+            .on('mouseout', mouseOut);
 }
 
 // update the display positions after each simulation tick
@@ -92,36 +93,55 @@ function ticked() {
         .attr("y2", function(d) { return d.target.y; });
 }
 
+function mouseOver(d){
+    var tooltipHtml = "<span>" + d.name + "："+ d.count + " movies.</span>";
+    var pad_top = (630*0.2+d.y-5)>height/2 ? 630*0.2+d.y-25 : 630*0.2+d.y+5;
+    var pad_left = (d.x+10)>width/2 ? d.x-100 : d.x+10;
+    tooltip.transition()
+            .duration(100)
+            .style("opacity", 0.8);
+    tooltip.html(tooltipHtml)
+            .style("top", pad_top+"px")
+            .style("left", pad_left+"px");
+
+}
+
+function mouseOut(){
+	tooltip.transition()
+           .duration(100)
+           .style("opacity", 0);
+}
+
 function dragstarted(d) {
-  if (!d3.event.active){
-    simulation.alphaTarget(0.3).restart();
-  } 
-  d.fx = d.x;
-  d.fy = d.y;
+    if (!d3.event.active){
+        simulation.alphaTarget(0.3).restart();
+    } 
+    d.fx = d.x;
+    d.fy = d.y;
 }
 
 function dragged(d) {
-  if(d3.event.x > 50 && d3.event.x < width-50){
-    d.fx = d3.event.x;
-  }
-  if(d3.event.y > 50 && d3.event.y < height-50){
-    d.fy = d3.event.y;
-  }
+    if(d3.event.x > 50 && d3.event.x < width-50){
+        d.fx = d3.event.x;
+    }
+    if(d3.event.y > 50 && d3.event.y < height-50){
+        d.fy = d3.event.y;
+    }
 }
 
 function dragended(d) {
-  if (!d3.event.active){
-    simulation.alphaTarget(0);
-  } 
-  d.fx = null;
-  d.fy = null;
+    if (!d3.event.active){
+        simulation.alphaTarget(0);
+    } 
+    d.fx = null;
+    d.fy = null;
 }
 
 function checkBounds(d){
-  if (d.x < 50) d.x = 50;
-  if (d.x > width-50) d.x = width-50;
-  if (d.y < 50) d.y = 50;
-  if (d.y > height-50) d.y = height-50;
+    if (d.x < 50) d.x = 50;
+    if (d.x > width-50) d.x = width-50;
+    if (d.y < 50) d.y = 50;
+    if (d.y > height-50) d.y = height-50;
 }
 
 // inititally show director network
