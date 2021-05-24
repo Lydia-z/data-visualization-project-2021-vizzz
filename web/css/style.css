@@ -219,3 +219,13 @@ fill: #c3c0cf;
 #pause {
 	position: sticky;
 }
+
+div.my_dataviz_timeline {
+	position: absolute;
+	width: 50%;
+}
+
+div.poster_movie {
+	position: absolute;
+	width: 50%;
+}
