@@ -5,7 +5,7 @@ var svg = d3.select("#who_ww"),
 var tooltip = d3.select("#tooltip").style("opacity", 0.8);
 //console.log(svg.node()); // svg.node() return the <svg> element and everything inside
 
-var datas = ["data/directors.json","data/producers.json","data/music_directors.json"];
+var datas = ["http://127.0.0.1:8080/data/directors.json","http://127.0.0.1:8080/data/producers.json","http://127.0.0.1:8080/data/music_directors.json"];
 var colors = ["#613659", "#C197D2", "#D3B1C2"];
 var svg_link, svg_node;
 var buttonid;
@@ -81,7 +81,7 @@ function drawSVG(graph, color) {
 }
 
 // update the display positions after each simulation tick
-function ticked() {  
+function ticked() {
     svg_node
         .attr("cx", function(d) { checkBounds(d); return d.x;})
         .attr("cy", function(d) { checkBounds(d); return d.y;});
@@ -115,7 +115,7 @@ function mouseOut(){
 function dragstarted(d) {
     if (!d3.event.active){
         simulation.alphaTarget(0.3).restart();
-    } 
+    }
     d.fx = d.x;
     d.fy = d.y;
 }
@@ -132,7 +132,7 @@ function dragged(d) {
 function dragended(d) {
     if (!d3.event.active){
         simulation.alphaTarget(0);
-    } 
+    }
     d.fx = null;
     d.fy = null;
 }

@@ -40,12 +40,12 @@ video {
   color: white;
 }
 
-section::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -70px; 
-  height: 60px; 
-  visibility: hidden; 
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 60px;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -60,7 +60,7 @@ section::before {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-    
+
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
@@ -89,7 +89,7 @@ section::before {
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
-  
+
   display: flex;
 }
 
@@ -104,8 +104,8 @@ section::before {
 }
 #respond {
   position:absolute;
-  width:45%; 
-  height:8%; 
+  width:45%;
+  height:8%;
   top:50%;
   left:28%;
   font-size: 30px;
@@ -127,8 +127,8 @@ section::before {
 }
 
 #top6_text {
-  width: 35%; 
-  height: 80%; 
+  width: 35%;
+  height: 80%;
   position: absolute;
   top: 10%;
   left: 63%;
@@ -196,4 +196,21 @@ section::before {
   border: 0px;
   border-radius: 5px;
   background-color: #211522;
+}
+
+div.tooltip {
+	position: absolute;
+	text-align: center;
+
+	padding: 2px;
+	font: 12px sans-serif;
+	fill: white
+	background: lightsteelblue;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+.axis path {
+fill: #c3c0cf;
 }
