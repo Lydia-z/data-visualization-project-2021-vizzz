@@ -15,6 +15,7 @@ var poster = d3.select("#poster_movie")
         .attr("width", 1000)
         .attr("height", 450)
         .attr("transform", "translate("+ (width_adjusted/2 - 450)  + ","+ 10 +")");
+
 var audioCtx = new(window.AudioContext || window.webkitAudioContext);
 
 var song = new Audio();
@@ -43,6 +44,9 @@ function wrap(text, width) {
   })
 }
 
+function pause(){
+  song.pause();
+}
 // function to update poster_movie
 function upload_poster(title,description){
           poster.selectAll("text").remove();
@@ -59,7 +63,7 @@ function upload_poster(title,description){
             .attr('height', 362)
             .attr("xlink:href", "poster/" + title + ".jpg");
           poster.append("text")
-            .attr('x', 600)
+            .attr('x', 400)
             .attr('y', 90)
             .text(title)
             .attr("fill","#613659")

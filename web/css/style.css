@@ -40,6 +40,7 @@ video {
   color: white;
 }
 
+
 section::before {
   display: block;
   content: " ";
@@ -213,4 +214,8 @@ div.tooltip {
 
 .axis path {
 fill: #c3c0cf;
+}
+
+#pause {
+	position: sticky;
 }
