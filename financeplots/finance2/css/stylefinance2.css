@@ -1,0 +1,19 @@
+
+#finance2-area text {
+  font: 12px sans-serif;
+}
+
+.f2-bar-positive {
+  fill: green;
+}
+
+.f2-bar-negative {
+  fill: red;
+}
+
+.f2axis path,
+.f2axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
