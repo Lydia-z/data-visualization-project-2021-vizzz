@@ -240,15 +240,15 @@ div.poster_movie {
 
 #finance2-area text {
   font: 12px sans-serif;
-  color: #c3c0cf;
+  fill: #c3c0cf;
 }
 
 .f2-bar-positive {
-  fill: green;
+  fill: #613659;
 }
 
 .f2-bar-negative {
-  fill: red;
+  fill: #D3B1C2;
 }
 
 .f2axis path,
@@ -281,10 +281,26 @@ div.poster_movie {
   background-color: #D3B1C2;
 }
 
-#finance1-area {
+.f1-value {
   position: absolute;
-  height: 80%;
-  width: 100%;
+  height: 7%;
+  width: auto;
+  top: 13%;
+  /*background-color: darkblue;*/
+}
+
+.f1-slider {
+  position: absolute;
+  height: 10%;
+  width: auto;
   top: 20%;
+  /*background-color: darkblue;*/
+}
+
+.f1-svg {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  top: 30%;
   /*background-color: darkblue;*/
 }
