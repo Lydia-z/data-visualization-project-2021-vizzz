@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Disney Movie Viz</title>
+	<link rel="icon" href="data/icons8-disney-movies-64.png">
+
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand">
+				<img src="data/icons8-disney-movies-64.png" width="40" height="40">
+				<span class="navbar-text"> Disney Movie Viz</span>
+			</a>
+
+
+			<div class="d-flex">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#characters">Characters</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#mostFamous">Popularity</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#money">Budget & Box Office</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#people">People</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<section>
+			<br>
+			<video autoplay muted poster="data/background.JPG" id="bgvideo">
+				<source src="data/disney.mp4" type="video/mp4">
+			</video>
+
+			<a id="welcome_button" href="#characters">
+				Welcome to Disney World... explore >>
+			</a>
+		</section>
+
+		<section id="characters">
+			<hr>
+
+			<div class="slider">
+				<div class="slides">
+					<div class="slide" id="slide-1">
+						<h2>Which is your favorite Disney character?</h2>
+						<img class='paint' onclick="color_char(this.id)" id='paint_0' src='data/1_1.png'
+							style='width:15%;top:55%;left:10%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_1' src='data/1_2.png'
+							style='width:10%;top:55%;left:75%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_2' src='data/1_3.png'
+							style='width:10%;top:13%;left:13%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_3' src='data/1_4.png'
+							style='width:14%;top:17%;left:33%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_4' src='data/1_5.png'
+							style='width:12%;top:67%;left:33%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_5' src='data/1_6.png'
+							style='width:18%;top:15%;left:72%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_6' src='data/1_7.png'
+							style='width:15%;top:13%;left:52%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_7' src='data/1_8.png'
+							style='width:13%;top:68%;left:55%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_8' src='data/1_9.png'
+							style='width:6%;top:43%;left:5%' />
+						<img class='paint' onclick="color_char(this.id)" id='paint_9' src='data/1_10.png'
+							style='width:14%;top:40%;left:85%' />
+
+						<div id='respond'>
+							Click to color your favorite character.
+						</div>
+					</div>
+					<div class="slide" id="slide-2">
+						<h2>Top 6 popular characters</h2>
+						<img class='top6' id='character_1' src='data/1_mickymouse.png'
+							style='width:25%;top:20%;left:18%' />
+						<img class='top6' id='character_2' src='data/2_donaldduck.png'
+							style='width:15%;top:40%;left:40%' />
+						<img class='top6' id='character_3' src='data/3_genie.png' style='width:17%;top:10%;left:8%' />
+						<img class='top6' id='character_4' src='data/4_snowwhite.png'
+							style='width:16%;top:50%;left:7%' />
+						<img class='top6' id='character_5' src='data/5_goofy.png' style='width:14%;top:67%;left:20%' />
+						<img class='top6' id='character_6' src='data/6_simba.png' style='width:8%;top:15%;left:40%' />
+						<div id='top6_text'>
+							<h3 id='char_rank'></h3>
+							<div id='char_fact'></div>
+							<div id='char_comment'><br><br><br><br><br><br>Among all the Disney characters, who is
+								favored by most people? The top 6 popular characters presented are from the voting
+								result <a id='rank_link' href='https://www.thetoptens.com/disney/disney-characters/'
+									target="_blank">here</a>. The results may be different from one ranking to another,
+								but hey, Mickey Mouse is always the top one!
+								<br>Click the character to see people's comments.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="mostFamous">
+			<hr>
+			<h2>Most famous Disney movies</h2>
+			<img id="pause" src=".\data\icons8-music-128.png" width="50" height="50" onclick="pause()"
+				style="top:10%;left:85%" />
+			<div id="my_dataviz_timeline"></div>
+			<div id="poster_movie"></div>
+		</section>
+
+		<section id="money">
+			<hr>
+			<div class="slider">
+				<div class="slides">
+					<div class="slide">
+						<h2>More Budget, Better Movie?</h2>
+						<div class="f1-value">
+							<div id="f1-value-range"></div>
+						</div>
+						<div class="f1-slider">
+							<div id="f1-slider-range"></div>
+						</div>
+						<div class="f1-svg">
+							<div id="finance1-area"></div>
+						</div>
+					</div>
+					<div class="slide">
+						<h2>Top 10 Movies with Finance Data</h2>
+						<div class="f2-btn-group">
+							<button id='finance2_0' onclick="update0(data1)">Profit</button>
+							<button id='finance2_1' onclick="update1(data2)">ROI</button>
+							<button id='finance2_2' onclick="update2(data3)">Loss</button>
+						</div>
+						<div class="f2-area">
+							<div id="finance2-area"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="people">
+			<hr>
+			<div class="slider">
+				<div class="slides">
+					<div class="slide">
+						<h2>Who contributes to which film</h2>
+					</div>
+					<div class="slide">
+						<h2>Who works with whom</h2>
+						<div class="btn-group">
+							<button id='www_0' onclick="loadData(this.id)">Directors</button>
+							<button id='www_1' onclick="loadData(this.id)">Producers</button>
+							<button id='www_2' onclick="loadData(this.id)">Music Drectors</button>
+						</div>
+						<svg id="who_ww">
+							<div id="tooltip" class="tooltip"></div>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<br>
+	</div>
+
+	<footer class="bg-dark text-center text-lg-start">
+		<div class="container" style="height: 150px;">
+			<div class="text-center">
+				<br><br><br><br>
+				COM_480 Data Visualization Project Presented by @Vizzz
+			</div>
+		</div>
+	</footer>
+
+	<!--<script src="lib/d3/d3.min.js"></script>-->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://unpkg.com/d3-simple-slider"></script>
+
+	<!--<script src="js/header.js"></script>-->
+	<script src="js/top6.js"></script>
+	<script src="js/color_character.js"></script>
+	<script src="js/who_with_whom.js"></script>
+	<script src="js/finance2.js"></script>
+	<script src="js/finance1.js"></script>
+	<script type="text/javascript" src="js/lolipop.js"></script>
+	<script type="text/javascript" src="js/poster.js"></script>
+</body>
+
+</html>

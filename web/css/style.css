@@ -229,3 +229,78 @@ div.poster_movie {
 	position: absolute;
 	width: 50%;
 }
+
+.f2-area {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 20%;
+  /*background-color: darkblue;*/
+}
+
+#finance2-area text {
+  font: 12px sans-serif;
+  fill: #c3c0cf;
+}
+
+.f2-bar-positive {
+  fill: #613659;
+}
+
+.f2-bar-negative {
+  fill: #D3B1C2;
+}
+
+.f2axis path,
+.f2axis line {
+  fill: none;
+  stroke: rgb(252, 250, 250);
+  shape-rendering: crispEdges;
+}
+
+.f2-btn-group{
+  position: absolute;
+  height: 7%;
+  width: auto;
+  top: 13%;
+}
+
+.f2-btn-group button {
+  border: 1px #211522;
+  color: white;
+  padding: 8px 13px;
+  cursor: pointer;
+}
+#finance2_0{
+  background-color: #613659;
+}
+#finance2_1{
+  background-color: #C197D2;
+}
+#finance2_2{
+  background-color: #D3B1C2;
+}
+
+.f1-value {
+  position: absolute;
+  height: 7%;
+  width: auto;
+  top: 13%;
+  /*background-color: darkblue;*/
+}
+
+.f1-slider {
+  position: absolute;
+  height: 10%;
+  width: auto;
+  top: 20%;
+  /*background-color: darkblue;*/
+}
+
+.f1-svg {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  top: 30%;
+  /*background-color: darkblue;*/
+}
