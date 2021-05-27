@@ -2245,7 +2245,7 @@ var data = [
     });
   
   var gRange = d3
-    .select('#slider-range')
+    .select('#f1-slider-range')
     .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', 100)
@@ -2254,7 +2254,7 @@ var data = [
   
   gRange.call(sliderRange);
   
-  d3.select('#value-range').text("Rating V.S. Budget for Films");
+  d3.select('#f1-value-range').text("Rating V.S. Budget for Films");
   
   // Initialize Svg area
   var svg = d3.select("#finance1-area").append("svg")
@@ -2437,5 +2437,5 @@ var data = [
   function updateslider() {
     //Update time slider
     const sliderValues = sliderRange.value()
-    d3.select('#value-range').text("Rating V.S. Budget for Films issued " + formatTime(sliderValues[0]) + ' - ' + formatTime(sliderValues[1]));
+    d3.select('#f1-value-range').text("Rating V.S. Budget for Films issued " + formatTime(sliderValues[0]) + ' - ' + formatTime(sliderValues[1]));
   }
