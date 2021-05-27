@@ -1,4 +1,4 @@
-d3.json("http://localhost:8083/financeplots/finance1/data/data_finance.json", function (data) {
+d3.json("http://localhost:8055/financeplots/finance1/data/data_finance.json", function (data) {
   var margin = {
     top: 50,
     right: 100,
