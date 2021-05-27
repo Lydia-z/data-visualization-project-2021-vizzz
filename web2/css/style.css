@@ -230,7 +230,7 @@ div.poster_movie {
 	width: 50%;
 }
 
-#finance2-area {
+.f2-area {
   position: absolute;
   height: 80%;
   width: 100%;
@@ -279,4 +279,12 @@ div.poster_movie {
 }
 #finance2_2{
   background-color: #D3B1C2;
+}
+
+#finance1-area {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 20%;
+  /*background-color: darkblue;*/
 }

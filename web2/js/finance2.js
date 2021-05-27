@@ -334,8 +334,6 @@ var data1 = [
     .tickSize(0)
     .tickPadding(10);
   
-  
-  
   var svg = d3.select("#finance2-area").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)

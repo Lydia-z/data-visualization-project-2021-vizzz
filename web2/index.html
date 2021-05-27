@@ -11,8 +11,8 @@
 
 	<script
     type="text/javascript"
-    src="//cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"  
-  ></script>
+    src="//cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"   ></script>
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
 
 	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -114,16 +114,23 @@
 		<div class="slider">
 			<div class="slides">
 				<div class="slide">
-					<h2>Who contributes to which film</h2>
+					<h2>More Budget, Better Movie?</h2>
+					<div class="f1-bar">
+						<div id="f1-value-range"></div>
+						<div id="f1-slider-range"></div>
+					  </div>
+					<div class="f1-svg">
+						<div id="finance1-area"></div>
+					</div>
 				</div>
 				<div class="slide">
-					<h2>Who works with whom</h2>
+					<h2>Top 10 Movies with Finance Data</h2>
 					<div class="f2-btn-group">
 						<button id='finance2_0' onclick="update0(data1)">Profit</button>
 						<button id='finance2_1' onclick="update1(data2)">ROI</button>
 						<button id='finance2_2' onclick="update2(data3)">Loss</button>
 					</div>
-					<div class="row">
+					<div class="f2-area">
 						<div id="finance2-area"></div>
 					</div>
 				</div>
@@ -165,6 +172,7 @@
 
 <!--<script src="lib/d3/d3.min.js"></script>-->
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/d3-simple-slider"></script>
 
 <!--<script src="js/header.js"></script>-->
 <script src="js/top6.js"></script>
@@ -174,7 +182,5 @@
 <script src="js/finance1.js"></script>
 <script type="text/javascript" src="js/lolipop.js"></script>
 <script type="text/javascript" src="js/poster.js"></script>
-
-
 </body>
 </html>
