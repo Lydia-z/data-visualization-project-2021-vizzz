@@ -10,47 +10,47 @@ var data_default = [{
   "ProfitRatio": 1
 }]
 
-var margin = {
+var f2margin = {
     top: 20,
     right: 100,
     bottom: 40,
     left: 250
   },
-  width = 600 - margin.left - margin.right,
-  height = 400 - margin.top - margin.bottom;
+  f2width = 600 - f2margin.left - f2margin.right,
+  f2height = 400 - f2margin.top - f2margin.bottom;
 
 
-var x = d3.scaleLinear()
-  .range([0, width]);
+var f2x = d3.scaleLinear()
+  .range([0, f2width]);
 
-var y = d3.scaleBand().rangeRound([0, height]);
+var f2y = d3.scaleBand().rangeRound([0, f2height]);
 
-var xAxis = d3.axisBottom()
-  .scale(x)
+var f2xAxis = d3.axisBottom()
+  .scale(f2x)
   .ticks(5)
   .tickFormat(d => `${parseInt(d / 1000000)}M`);
 
-var yAxis = d3.axisLeft()
-  .scale(y)
+var f2yAxis = d3.axisLeft()
+  .scale(f2y)
   .tickSize(0)
   .tickPadding(10);
 
-var svg = d3.select("#finance2-area").append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+var f2svg = d3.select("#finance2-area").append("svg")
+  .attr("f2width", f2width + f2margin.left + f2margin.right)
+  .attr("f2height", f2height + f2margin.top + f2margin.bottom)
   .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + f2margin.left + "," + f2margin.top + ")");
 
-const xAxisGroup = svg.append("g")
+const f2xAxisGroup = f2svg.append("g")
   .attr("class", "x f2axis")
-  .attr("transform", "translate(0," + height + ")")
-const yAxisGroup = svg.append("g")
+  .attr("transform", "translate(0," + f2height + ")")
+const f2yAxisGroup = f2svg.append("g")
   .attr("class", "y f2axis")
   .attr("transform", "translate(" + 0 + ",0)")
 
-d3.json("http://localhost:8080/financeplots/finance2/data/top10profit.json", function(data1) {
-  d3.json("http://localhost:8080/financeplots/finance2/data/top10ROI.json", function(data2) {
-    d3.json("http://localhost:8080/financeplots/finance2/data/top10loss.json", function(data3) {
+d3.json("http://localhost:8080/web/data/top10profit.json", function(data1) {
+  d3.json("http://localhost:8080/web/data/top10ROI.json", function(data2) {
+    d3.json("http://localhost:8080/web/data/top10loss.json", function(data3) {
       var flagicon = 2
       update(data3)
     });
@@ -90,21 +90,21 @@ function update2(data) {
 }    
     
 function update(data) {
-  x.domain([0,
+  f2x.domain([0,
     Math.max(d3.max(data, d => d.BoxOffice), d3.max(data, d => d.Budget))
   ]);
 
-  y.domain(data.map(function(d) {
+  f2y.domain(data.map(function(d) {
     return d.title;
   }));
 
   //Set Transition Period
   const t = d3.transition().duration(500);
 
-  var barrect = svg.selectAll("rect")
+  var barrect = f2svg.selectAll("rect")
     .data(data, d => d.ReleaseDate)
 
-  var bartext = svg.selectAll("text")
+  var bartext = f2svg.selectAll("text")
     .data(data, d => d.ReleaseDate)
 
   barrect.exit().remove()
@@ -117,21 +117,21 @@ function update(data) {
       return "bar bar--positive";
     })
     .attr("x", function(d) {
-      return x(0);
+      return f2x(0);
     })
     .attr("y", function(d) {
-      return y(d.title) + y.bandwidth() * 0.1;
+      return f2y(d.title) + f2y.bandf2width() * 0.1;
     })
-    .attr("width", function(d) {
-      return Math.abs(x(d.BoxOffice) - x(0));
+    .attr("f2width", function(d) {
+      return Math.abs(f2x(d.BoxOffice) - f2x(0));
     })
-    .attr("height", y.bandwidth() * 0.4)
+    .attr("f2height", f2y.bandf2width() * 0.4)
 
   bartext.enter().append('text')
     .transition(t)
     .attr("text-anchor", "start")
-    .attr("x", d => x(Math.min(0, d.BoxOffice)) + Math.abs(x(d.BoxOffice) - x(0)))
-    .attr("y", d => y(d.title) + (y.bandwidth() * 0.3))
+    .attr("x", d => f2x(Math.min(0, d.BoxOffice)) + Math.abs(f2x(d.BoxOffice) - f2x(0)))
+    .attr("y", d => f2y(d.title) + (f2y.bandf2width() * 0.3))
     .attr("dy", ".35em")
     .text(function(d) {
       return d3.format(".2f")(d.BoxOffice / 1000000);
@@ -144,64 +144,64 @@ function update(data) {
       return "bar bar--negative";
     })
     .attr("x", function(d) {
-      return x(Math.min(0, d.Budget));
+      return f2x(Math.min(0, d.Budget));
     })
-    .attr("y", d => y(d.title) + y.bandwidth() * 0.5)
-    .attr("width", d => Math.abs(x(d.Budget) - x(0)))
-    .attr("height", y.bandwidth() * 0.4)
+    .attr("y", d => f2y(d.title) + f2y.bandf2width() * 0.5)
+    .attr("f2width", d => Math.abs(f2x(d.Budget) - f2x(0)))
+    .attr("f2height", f2y.bandf2width() * 0.4)
 
   bartext.enter().append('text')
     .transition(t)
     .attr("text-anchor", "start")
     .attr("x", function(d) {
-      return x(d.Budget);
+      return f2x(d.Budget);
     })
     .attr("y", function(d) {
-      return y(d.title) + (y.bandwidth() * 0.7);
+      return f2y(d.title) + (f2y.bandf2width() * 0.7);
     })
     .attr("dy", ".35em")
     .text(function(d) {
       return d3.format(".2f")(d.Budget / 1000000);
     })
 
-  xAxisGroup
+  f2xAxisGroup
     .transition(t)
-    .call(xAxis);
+    .call(f2xAxis);
 
-  yAxisGroup
+  f2yAxisGroup
     .transition(t)
-    .call(yAxis);
+    .call(f2yAxis);
 }
 
 function update_default(data) {
-  x.domain([0,
+  f2x.domain([0,
     Math.max(d3.max(data, d => d.BoxOffice), d3.max(data, d => d.Budget))
   ]);
 
-  y.domain(data.map(function(d) {
+  f2y.domain(data.map(function(d) {
     return d.title;
   }));
 
   //Set Transition Period
   const t = d3.transition().duration(500);
 
-  var barrect = svg.selectAll("rect")
+  var barrect = f2svg.selectAll("rect")
     .data(data, d => d.ReleaseDate)
 
-  var bartext = svg.selectAll("text")
+  var bartext = f2svg.selectAll("text")
     .data(data, d => d.ReleaseDate)
 
   barrect.exit().remove()
   bartext.exit().remove()
 
 
-  xAxisGroup
+  f2xAxisGroup
     .transition(t)
-    .call(xAxis);
+    .call(f2xAxis);
 
-  yAxisGroup
+  f2yAxisGroup
     .transition(t)
-    .call(yAxis);
+    .call(f2yAxis);
 }    
     
     

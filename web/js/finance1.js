@@ -2295,11 +2295,11 @@ var data = [
     
   // Set base axis
   const xAxisGroup = svg.append("g")
-    .attr("class", "x_axis")
+    .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")");
   
   const yAxisGroup = svg.append("g")
-    .attr("class", "y_axis")
+    .attr("class", "y axis")
     .attr("transform", "translate(" + x(0) + ",0)");
   
   
