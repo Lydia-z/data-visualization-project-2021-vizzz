@@ -31,7 +31,7 @@ var div = d3.select("#my_dataviz_timeline").append("div")
             .style("opacity", 0);
 
 // Parse the Data
-d3.csv("http://127.0.0.1:8080/data/best30.csv",function(error,data) {
+d3.csv("./data/best30.csv",function(error,data) {
   if (error) throw error;
   data = data;
 // Add X axis

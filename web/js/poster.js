@@ -13,7 +13,7 @@ var description = "Fantasia is a 1940 American animated film produced and origin
 var poster = d3.select("#poster_movie")
         .append("svg")
         .attr("width", 1000)
-        .attr("height", 450)
+        .attr("height", 400)
         .attr("transform", "translate("+ (width_adjusted/2 - 450)  + ","+ 10 +")");
 
 var audioCtx = new(window.AudioContext || window.webkitAudioContext);
@@ -59,11 +59,11 @@ function upload_poster(title,description){
           poster.append("svg:image")
             .attr('x', 50)
             .attr('y', 10)
-            .attr('width', 246)
-            .attr('height', 362)
+            .attr('width', 246*0.9)
+            .attr('height', 362*0.9)
             .attr("xlink:href", "poster/" + title + ".jpg");
           poster.append("text")
-            .attr('x', 400)
+            .attr('x', 300)
             .attr('y', 90)
             .text(title)
             .attr("fill","#613659")
@@ -71,7 +71,7 @@ function upload_poster(title,description){
           poster.append("text")
             .attr("y", 120)
               .attr("dy",0)
-            .attr("transform", "translate(400,0)")
+            .attr("transform", "translate(300,0)")
             .text(description)
             .attr("font-size", "15px")
             .attr("font-weight", 900)
