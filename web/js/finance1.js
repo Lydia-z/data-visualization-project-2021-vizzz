@@ -2314,7 +2314,7 @@ var f1data = [
   
   
   // Set Tooltips
-  var tip = d3.tip()
+  var f1tip = d3.tip()
     .attr('class', 'finance1_tip')
     .html(d => {
       let text = `<strong>Title:</strong> <span style='color:#D3B1C2;text-transform:capitalize'>${d.title}</span><br>`
@@ -2323,7 +2323,7 @@ var f1data = [
       text += `<strong>IMDB:</strong> <span style='color:#D3B1C2'>${d.imdb}</span><br>`
       return text
     })
-  f1svg.call(tip)
+  f1svg.call(f1tip)
   
   
   
@@ -2382,8 +2382,8 @@ var f1data = [
     .attr("fill", function(d) {
       return "rgb(" + c1scale(d.BoxOffice) + "," + c2scale(d.BoxOffice) + "," + c3scale(d.BoxOffice) + ")"
     })
-    .on("mouseover", tip.show)
-    .on("mouseout", tip.hide)
+    .on("mouseover", f1tip.show)
+    .on("mouseout", f1tip.hide)
   
   function updatefinance1svg(dataup) {
     const sliderValues = f1sliderRange.value()
@@ -2468,10 +2468,10 @@ var f1data = [
       .attr("fill", function(d) {
       return "rgb(" + c1scale(d.BoxOffice) + "," + c2scale(d.BoxOffice) + "," + c3scale(d.BoxOffice) + ")"
     })
-      .on("mouseover", tip.show)
-      .on("mouseout", tip.hide);
+      .on("mouseover", f1tip.show)
+      .on("mouseout", f1tip.hide);
   
-    f1svg.call(tip)
+    f1svg.call(f1tip)
   }
   
   function updateslider() {
