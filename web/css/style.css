@@ -292,15 +292,47 @@ div.poster_movie {
 .f1-slider {
   position: absolute;
   height: 10%;
-  width: auto;
   top: 20%;
+  width: 80%;
+  top: 20%;
+  left: 10%;
   /*background-color: darkblue;*/
 }
 
 .f1-svg {
   position: absolute;
   height: 70%;
-  width: 100%;
+  width: 90%;
   top: 30%;
+  left: 5%;
   /*background-color: darkblue;*/
+}
+
+.finance1_tip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 3px 5px 3px 5px;
+  font: 0.5em sans-serif;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #211522;
+}
+
+.f1axis path,
+.f1axis line {
+  fill: none;
+  stroke: rgb(252, 250, 250);
+  shape-rendering: crispEdges;
+}
+
+#finance1-area text {
+  font: 15px sans-serif;
+  fill: #c3c0cf;
+}
+
+#f1-slider-range text {
+  font: 12px sans-serif;
+  fill: #c3c0cf;
 }

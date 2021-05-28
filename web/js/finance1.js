@@ -1,4 +1,4 @@
-var data = [
+var f1data = [
   {
       "title": "Pinocchio",
       "RunningTime": 88.0,
@@ -2215,65 +2215,63 @@ var data = [
     }
   ];
   
-  var margin = {
+  var f1margin = {
       top: 50,
       right: 100,
       bottom: 100,
       left: 150
     },
-    width = 600 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    f1width = 900 - f1margin.left - f1margin.right,
+    f1height = 480 - f1margin.top - f1margin.bottom;
   
   // time parsers/formatters
-  const parseTime = d3.timeParse("%Y-%m-%d")
-  const formatTime = d3.timeFormat("%d/%m/%Y")
+  const f1parseTime = d3.timeParse("%Y-%m-%d")
+  const f1formatTime = d3.timeFormat("%d/%m/%Y")
   
   // Initialize Date Slider
-  var sliderRange = d3.sliderBottom()
-    .min(d3.min(data, d => d.Budget / 100000000))
-    .max(d3.max(data, d => d.Budget / 100000000))
-    .min(parseTime("1940-02-07").getTime())
-    .max(parseTime("2020-03-09").getTime())
-    .width(width)
-    .tickFormat(formatTime)
+  var f1sliderRange = d3.sliderBottom()
+    .min(f1parseTime("1940-02-07").getTime())
+    .max(f1parseTime("2020-03-09").getTime())
+    .width(f1width)
+    .tickFormat(f1formatTime)
     .ticks(6)
-    .default([parseTime("1940-02-07").getTime(), parseTime("2020-03-09").getTime()])
+    .default([f1parseTime("1940-02-07").getTime(), f1parseTime("2020-03-09").getTime()])
     .fill('#2196f3')
     .on('onchange', val => {
       updateslider();
-      updatefinance1svg(data);
+      updatefinance1svg(f1data);
     });
   
-  var gRange = d3
+  var f1gRange = d3
     .select('#f1-slider-range')
     .append('svg')
-    .attr('width', width + margin.left + margin.right)
+    .attr('width', f1width + f1margin.left + f1margin.right)
     .attr('height', 100)
     .append('g')
-    .attr("transform", "translate(" + margin.left + "," + 30 + ")")
+    .attr("transform", "translate(" + f1margin.left + "," + 30 + ")")
   
-  gRange.call(sliderRange);
+  f1gRange.call(f1sliderRange);
   
   d3.select('#f1-value-range').text("Rating V.S. Budget for Films");
   
   // Initialize Svg area
-  var svg = d3.select("#finance1-area").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+  var f1svg = d3.select("#finance1-area").append("svg")
+    .attr("width", f1width + f1margin.left + f1margin.right)
+    .attr("height", f1height + f1margin.top + f1margin.bottom)
     .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .attr("transform", "translate(" + f1margin.left + "," + f1margin.top + ")");
   
   // Initialize Axis Labels - not changing
-  const xLabel = svg.append("text")
-    .attr("class", "x_axisLabel")
-    .attr("y", height + 50)
-    .attr("x", width / 2)
+  const f1xLabel = f1svg.append("text")
+    .attr("class", "x axisLabel")
+    .attr("y", f1height + 50)
+    .attr("x", f1width / 2)
     .attr("font-size", "15px")
     .attr("text-anchor", "middle")
     .text("Budget")
   
-  const yLabel = svg.append("text")
-    .attr("class", "y_axisLabel")
+  const f1yLabel = f1svg.append("text")
+    .attr("class", "y axisLabel")
     .attr("transform", "rotate(-90)")
     .attr("y", -50)
     .attr("x", -120)
@@ -2282,102 +2280,129 @@ var data = [
     .text("IMDB score")
   
   // Initialize Scale
-  var x = d3.scaleLog()
-    .range([0, width])
+  var f1x = d3.scaleLog()
+    .range([0, f1width])
     .base(10);
   
-  var y = d3.scaleLinear()
-    .range([height, 0]);
+  var f1y = d3.scaleLinear()
+    .range([f1height, 0]);
   
   var cscale = d3.scaleLog()
     .range([0, 255])
     .base(10);
     
+  var c1scale = d3.scaleLog()
+    .range([97, 195])
+    .base(10);
+    
+  var c2scale = d3.scaleLog()
+    .range([54, 192])
+    .base(10);
+    
+  var c3scale = d3.scaleLog()
+    .range([89, 207])
+    .base(10);
+    
   // Set base axis
-  const xAxisGroup = svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")");
+  const f1xAxisGroup = f1svg.append("g")
+    .attr("class", "x f1axis")
+    .attr("transform", "translate(0," + f1height + ")");
   
-  const yAxisGroup = svg.append("g")
-    .attr("class", "y axis")
-    .attr("transform", "translate(" + x(0) + ",0)");
+  const f1yAxisGroup = f1svg.append("g")
+    .attr("class", "y f1axis")
+    .attr("transform", "translate(" + f1x(0) + ",0)");
   
   
   // Set Tooltips
   var tip = d3.tip()
     .attr('class', 'finance1_tip')
     .html(d => {
-      let text = `<strong>Title:</strong> <span style='color:red;text-transform:capitalize'>${d.title}</span><br>`
-      text += `<strong>Budget:</strong> <span style='color:red;text-transform:capitalize'>${d.Budget}</span><br>`
-      text += `<strong>Box Office:</strong> <span style='color:red'>${d.BoxOffice}</span><br>`
-      text += `<strong>IMDB:</strong> <span style='color:red'>${d.imdb}</span><br>`
+      let text = `<strong>Title:</strong> <span style='color:#D3B1C2;text-transform:capitalize'>${d.title}</span><br>`
+      text += `<strong>Budget:</strong> <span style='color:#D3B1C2;text-transform:capitalize'>${d.Budget}</span><br>`
+      text += `<strong>Box Office:</strong> <span style='color:#D3B1C2'>${d.BoxOffice}</span><br>`
+      text += `<strong>IMDB:</strong> <span style='color:#D3B1C2'>${d.imdb}</span><br>`
       return text
     })
-  svg.call(tip)
+  f1svg.call(tip)
   
   
   
   // Initialize axis
-  x.domain([
-    d3.min(data, d => d.Budget),
-    d3.max(data, d => d.Budget)
+  f1x.domain([
+    d3.min(f1data, d => d.Budget),
+    d3.max(f1data, d => d.Budget)
   ]);
   
-  y.domain([
-    d3.min(data, d => d.imdb),
-    d3.max(data, d => d.imdb)
+  f1y.domain([
+    d3.min(f1data, d => d.imdb),
+    d3.max(f1data, d => d.imdb)
   ]);
   
   cscale.domain([
-    d3.min(data, d => d.BoxOffice),
-    d3.max(data, d => d.BoxOffice)
+    d3.min(f1data, d => d.BoxOffice),
+    d3.max(f1data, d => d.BoxOffice)
+  ])
+  
+  c1scale.domain([
+    d3.min(f1data, d => d.BoxOffice),
+    d3.max(f1data, d => d.BoxOffice)
+  ])
+  
+  c2scale.domain([
+    d3.min(f1data, d => d.BoxOffice),
+    d3.max(f1data, d => d.BoxOffice)
+  ])
+  
+  c3scale.domain([
+    d3.min(f1data, d => d.BoxOffice),
+    d3.max(f1data, d => d.BoxOffice)
   ])
   
   // Format X axis
-  var xAxis = d3.axisBottom()
-    .scale(x)
+  var f1xAxis = d3.axisBottom()
+    .scale(f1x)
     .ticks(3)
     .tickFormat(d => `${parseInt(d / 1000000)}M`);
   
-  xAxisGroup.call(xAxis);
+  f1xAxisGroup.call(f1xAxis);
   
-  var yAxis = d3.axisLeft()
-    .scale(y)
+  var f1yAxis = d3.axisLeft()
+    .scale(f1y)
     .ticks(5);
   
-  yAxisGroup.call(yAxis);
+  f1yAxisGroup.call(f1yAxis);
   
-  const circle_finance1 = svg.selectAll("circle")
-    .data(data)
+  const circle_finance1 = f1svg.selectAll("circle")
+    .data(f1data)
   
   circle_finance1.enter().append("circle")
-    .attr("cx", d => x(d.Budget))
-    .attr("cy", d => y(d.imdb))
+    .attr("cx", d => f1x(d.Budget))
+    .attr("cy", d => f1y(d.imdb))
     .attr("r", d => 3)
     .attr("fill", function(d) {
-      return "rgb(" + cscale(d.BoxOffice) + "," + 0 + ",0)"
+      return "rgb(" + c1scale(d.BoxOffice) + "," + c2scale(d.BoxOffice) + "," + c3scale(d.BoxOffice) + ")"
     })
     .on("mouseover", tip.show)
     .on("mouseout", tip.hide)
   
-  function updatefinance1svg(data) {
-    const sliderValues = sliderRange.value()
+  function updatefinance1svg(dataup) {
+    const sliderValues = f1sliderRange.value()
   
     //Select Data based on filtered time slider
-    const dataTimeFiltered = data.filter(d => {
-      return ((parseTime(d.ReleaseDate).getTime() >= sliderValues[0]) && (parseTime(d.ReleaseDate).getTime() <= sliderValues[1]))
+    const dataTimeFiltered = dataup.filter(d => {
+      return ((f1parseTime(d.ReleaseDate).getTime() >= sliderValues[0]) && (f1parseTime(d.ReleaseDate).getTime() <= sliderValues[1]))
     })
   
     //Set Transition Period
     const t = d3.transition().duration(500);
   
     // Initialize axis
-    x.domain([
+    f1x.domain([
       d3.min(dataTimeFiltered, d => d.Budget),
       d3.max(dataTimeFiltered, d => d.Budget)
     ]);
   
-    y.domain([
+    f1y.domain([
       d3.min(dataTimeFiltered, d => d.imdb),
       d3.max(dataTimeFiltered, d => d.imdb)
     ]);
@@ -2386,23 +2411,38 @@ var data = [
       d3.min(dataTimeFiltered, d => d.BoxOffice),
       d3.max(dataTimeFiltered, d => d.BoxOffice)
     ])
+    
+    c1scale.domain([
+      d3.min(dataTimeFiltered, d => d.BoxOffice),
+      d3.max(dataTimeFiltered, d => d.BoxOffice)
+    ])
+    
+    c2scale.domain([
+      d3.min(dataTimeFiltered, d => d.BoxOffice),
+      d3.max(dataTimeFiltered, d => d.BoxOffice)
+    ])
+    
+    c3scale.domain([
+      d3.min(dataTimeFiltered, d => d.BoxOffice),
+      d3.max(dataTimeFiltered, d => d.BoxOffice)
+    ])
   
     // Update axis
-    var xAxis = d3.axisBottom()
-      .scale(x)
+    var f1xAxis = d3.axisBottom()
+      .scale(f1x)
       .ticks(2)
       .tickFormat(d => `${parseInt(d / 1000000)}M`);
   
-    xAxisGroup.transition(t).call(xAxis);
+    f1xAxisGroup.transition(t).call(f1xAxis);
   
-    var yAxis = d3.axisLeft()
-      .scale(y)
+    var f1yAxis = d3.axisLeft()
+      .scale(f1y)
       .ticks(5);
   
-    yAxisGroup.transition(t).call(yAxis);
+    f1yAxisGroup.transition(t).call(f1yAxis);
   
     // Update plot
-    const circle_finance1 = svg.selectAll("circle")
+    const circle_finance1 = f1svg.selectAll("circle")
       .data(dataTimeFiltered, d => d.ReleaseDate)
   
     circle_finance1.exit()
@@ -2411,31 +2451,31 @@ var data = [
   
     circle_finance1
       .attr("fill", function(d) {
-        return "rgb(" + cscale(d.BoxOffice) + "," + 0 + ",0)"
+        return "rgb(" + c1scale(d.BoxOffice) + "," + c2scale(d.BoxOffice) + "," + c3scale(d.BoxOffice) + ")"
       })
       .transition(t)
-      .attr("cx", d => x(d.Budget))
-      .attr("cy", d => y(d.imdb))
+      .attr("cx", d => f1x(d.Budget))
+      .attr("cy", d => f1y(d.imdb))
       .attr("r", d => 3);
   
     circle_finance1.enter()
       .append("circle")
       //.transition().duration(200)
       .merge(circle_finance1)
-      .attr("cx", d => x(d.Budget))
-      .attr("cy", d => y(d.imdb))
+      .attr("cx", d => f1x(d.Budget))
+      .attr("cy", d => f1y(d.imdb))
       .attr("r", d => 3)
       .attr("fill", function(d) {
-      return "rgb(" + cscale(d.BoxOffice) + "," + 0 + ",0)"
+      return "rgb(" + c1scale(d.BoxOffice) + "," + c2scale(d.BoxOffice) + "," + c3scale(d.BoxOffice) + ")"
     })
       .on("mouseover", tip.show)
       .on("mouseout", tip.hide);
   
-    svg.call(tip)
+    f1svg.call(tip)
   }
   
   function updateslider() {
     //Update time slider
-    const sliderValues = sliderRange.value()
-    d3.select('#f1-value-range').text("Rating V.S. Budget for Films issued " + formatTime(sliderValues[0]) + ' - ' + formatTime(sliderValues[1]));
+    const sliderValues = f1sliderRange.value()
+    d3.select('#f1-value-range').text("Rating V.S. Budget for Films issued " + f1formatTime(sliderValues[0]) + ' - ' + f1formatTime(sliderValues[1]));
   }
