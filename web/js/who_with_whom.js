@@ -1,6 +1,7 @@
 var svg_www = d3.select("#who_ww"),
     width_www = svg_www.node().getBoundingClientRect().width,
     height_www = svg_www.node().getBoundingClientRect().height;
+    console.log(height_www);
 
 var tooltip_www = d3.select("#tooltip").style("opacity", 0.8);
 //console.log(svg.node()); // svg.node() return the <svg> element and everything inside
@@ -122,10 +123,10 @@ function dragstarted_www(d) {
 }
 
 function dragged_www(d) {
-    if(d3.event.x > 50 && d3.event.x < width-50){
+    if(d3.event.x > 50 && d3.event.x < width_www-50){
         d.fx = d3.event.x;
     }
-    if(d3.event.y > 50 && d3.event.y < height-50){
+    if(d3.event.y > 50 && d3.event.y < height_www-50){
         d.fy = d3.event.y;
     }
 }
@@ -140,9 +141,9 @@ function dragended_www(d) {
 
 function checkBounds(d){
     if (d.x < 50) d.x = 50;
-    if (d.x > width-50) d.x = width-50;
+    if (d.x > width_www-50) d.x = width_www-50;
     if (d.y < 50) d.y = 50;
-    if (d.y > height-50) d.y = height-50;
+    if (d.y > height_www-50) d.y = height_www-50;
 }
 
 // inititally show director network
