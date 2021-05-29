@@ -2214,15 +2214,17 @@ var f1data = [
       "ProfitRatio": 0.285
     }
   ];
-  
+  var f1slide = document.getElementById('f1_slide');
+  var f1title = document.getElementById('f1-value-range');
+
   var f1margin = {
       top: 50,
       right: 100,
-      bottom: 100,
-      left: 150
+      bottom: 60,
+      left: 100
     },
-    f1width = 900 - f1margin.left - f1margin.right,
-    f1height = 480 - f1margin.top - f1margin.bottom;
+    f1width = f1slide.clientWidth*0.7 - f1margin.left - f1margin.right,
+    f1height = f1slide.clientWidth*0.4 - f1margin.top - f1margin.bottom;
   
   // time parsers/formatters
   const f1parseTime = d3.timeParse("%Y-%m-%d")
@@ -2232,11 +2234,11 @@ var f1data = [
   var f1sliderRange = d3.sliderBottom()
     .min(f1parseTime("1940-02-07").getTime())
     .max(f1parseTime("2020-03-09").getTime())
-    .width(f1width)
+    .width(f1width-10)
     .tickFormat(f1formatTime)
     .ticks(6)
     .default([f1parseTime("1940-02-07").getTime(), f1parseTime("2020-03-09").getTime()])
-    .fill('#2196f3')
+    .fill('#9035c4')
     .on('onchange', val => {
       updateslider();
       updatefinance1svg(f1data);
@@ -2252,7 +2254,8 @@ var f1data = [
   
   f1gRange.call(f1sliderRange);
   
-  d3.select('#f1-value-range').text("Rating V.S. Budget for Films");
+  //d3.select('#f1-value-range').text("Rating V.S. Budget for Films");
+  f1title.innerHTML = "Rating V.S. Budget for Films";
   
   // Initialize Svg area
   var f1svg = d3.select("#finance1-area").append("svg")
@@ -2477,5 +2480,7 @@ var f1data = [
   function updateslider() {
     //Update time slider
     const sliderValues = f1sliderRange.value()
-    d3.select('#f1-value-range').text("Rating V.S. Budget for Films issued " + f1formatTime(sliderValues[0]) + ' - ' + f1formatTime(sliderValues[1]));
+    //d3.select('#f1-value-range').text("Rating V.S. Budget for Films issued" + f1formatTime(sliderValues[0]) + ' - ' + f1formatTime(sliderValues[1]));
+    f1title.innerHTML = "Rating V.S. Budget for Films <br> issued " + f1formatTime(sliderValues[0]) + ' - ' + f1formatTime(sliderValues[1]);
+    console.log(f1title);
   }

@@ -1,21 +1,21 @@
-var width = 1200
-var height = 700
-var width_window = Math.min(1800, window.innerWidth)
-var height_window = window.innerHeigh
-var width_adjusted = width_window  - 300
+var width = 1200;
+var height = 700;
+var width_window = Math.min(1800, pop_slide.clientWidth);
+var height_window = pop_slide.clientHeight;
+var width_adjusted = width_window  - 300;
 
 
 // variables to initialize info
-var title = "Fantasia"
+var title = "Fantasia";
 
 var description = "Fantasia is a 1940 American animated film produced and originally released by Walt Disney Productions, with story direction by Joe Grant and Dick Huemer and production supervision by Walt Disney and Ben Sharpsteen. The third Disney animated feature film, it consists of eight animated segments set to pieces of classical music conducted by Leopold Stokowski, seven of which are performed by the Philadelphia Orchestra. Music critic and composer Deems Taylor acts as the film's Master of Ceremonies who introduces each segment in live action."
 // svg for the poster_movie
 var poster = d3.select("#poster_movie")
         .append("svg")
-        .attr("width", 1000)
-        .attr("height", 400)
-        .attr("transform", "translate("+ (width_adjusted/2 - 450)  + ","+ 10 +")");
-
+        .attr("width", pop_slide.clientWidth-50)
+        .attr("height", height_window*0.6)
+        .attr("transform", "translate("+ 80 + ","+ 0 +")");
+console.log(pop_slide.clientWidth);
 var audioCtx = new(window.AudioContext || window.webkitAudioContext);
 
 var song = new Audio();

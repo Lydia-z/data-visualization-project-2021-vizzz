@@ -87,7 +87,8 @@
 							style='width:14%;top:40%;left:85%' />
 
 						<div id='respond'>
-							Click to color your favorite character.
+							<a style="color: #D3B1C2">Click</a> to color your favored character.<br>
+							<a style="color: #D3B1C2">Slide</a> to the right to see the most popular ones.
 						</div>
 					</div>
 					<div class="slide" id="slide-2">
@@ -120,25 +121,39 @@
 
 		<section id="mostFamous">
 			<hr>
-			<h2>Most famous Disney movies</h2>
-			<!--<div class="slider">
+			<h2>30 Disney movies with the highest reviews</h2>
+			<div class="slider">
 				<div class="slides">
-					<div class="slide">-->
-						<img id="pause" src=".\data\icons8-music-128.png" width="50" height="50" onclick="pause()"
-							style="top:10%;left:85%" />
+					<div class="slide" id="pop_slide">
+						
 						<div id="my_dataviz_timeline"></div>
 						<div id="poster_movie"></div>
-					<!--</div>
+						<img id="pause" src=".\data\icons8-music-128.png" width="50" height="50" onclick="pause()"/>
+					</div>
 				</div>
-			</div>-->
+			</div>
 		</section>
 
 		<section id="money">
 			<hr>
 			<div class="slider">
 				<div class="slides">
-					<div class="slide">
-						<h2>More Budget, Better Movie?</h2>
+					<div class="slide" id="f1_slide">
+						<h2>More Budget, Better Movie?</h2>						
+						<div class="side_nodes" id="f1_explaination">explain a bit, 
+
+							blahblahblahblahblahblahblahblahblahblah
+						blahblahblahblahblahblahblahblahblahblahb
+					lahblahblahblahblahblahblahblahblahblah, 
+
+				slide to see the top 10 movies 
+
+				blahblahblahb
+			lahblahblahblahblahblahblahblahblahblahblahblah
+			blhblahblahblahblahblahblahblahblahblahblahb
+	hblahblahblahblahblah...
+
+style needs to be changed</div>
 						<div class="f1-value">
 							<div id="f1-value-range"></div>
 						</div>
@@ -149,7 +164,7 @@
 							<div id="finance1-area"></div>
 						</div>
 					</div>
-					<div class="slide">
+					<div class="slide" id="f2_slide">
 						<h2>Top 10 Movies with Finance Data</h2>
 						<div class="f2-btn-group">
 							<button id='finance2_0' onclick="update0()">Profit</button>
@@ -173,6 +188,20 @@
 					</div>
 					<div class="slide">
 						<h2>Who works with whom</h2>
+						<div class="side_nodes" id="www_explaination">explain a bit, 
+
+							blahblahblahblahblahblahblahblahblahblah
+						blahblahblahblahblahblahblahblahblahblahb
+					lahblahblahblahblahblahblahblahblahblah, 
+
+				slide to see the top 10 movies 
+
+				blahblahblahb
+			lahblahblahblahblahblahblahblahblahblahblahblah
+			blhblahblahblahblahblahblahblahblahblahblahb
+	hblahblahblahblahblah...
+
+style needs to be changed</div>
 						<div class="btn-group">
 							<button id='www_0' onclick="loadData(this.id)">Directors</button>
 							<button id='www_1' onclick="loadData(this.id)">Producers</button>

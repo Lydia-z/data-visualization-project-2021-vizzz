@@ -296,6 +296,8 @@ var f2data1 = [
     "ROI": -0.4857142857,
     "ProfitRatio": 0.5142857143
   }]; //loss
+
+  var f2_slide = document.getElementById('f2_slide');
   
   var f2data_default = [{
     "title": "Please select a category",
@@ -311,12 +313,12 @@ var f2data1 = [
   
   var f2margin = {
       top: 20,
-      right: 100,
+      right: 80,
       bottom: 40,
-      left: 250
+      left: 180
     },
-    f2width = 1100 - f2margin.left - f2margin.right,
-    f2height = 480 - f2margin.top - f2margin.bottom;
+    f2width = f2_slide.clientWidth - f2margin.left - f2margin.right,
+    f2height = f2_slide.clientHeight*0.73 - f2margin.top - f2margin.bottom;
   
   
   var f2x = d3.scaleLinear()

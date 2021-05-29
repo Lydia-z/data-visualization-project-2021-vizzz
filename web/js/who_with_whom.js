@@ -1,7 +1,7 @@
 var svg_www = d3.select("#who_ww"),
-    width_www = svg_www.node().getBoundingClientRect().width,
+    width_www = svg_www.node().getBoundingClientRect().width*0.6,
     height_www = svg_www.node().getBoundingClientRect().height;
-    console.log(height_www);
+    //console.log(height_www);
 
 var tooltip_www = d3.select("#tooltip").style("opacity", 0.8);
 //console.log(svg.node()); // svg.node() return the <svg> element and everything inside
@@ -151,7 +151,7 @@ loadData("www_0");
 
 // update size-related forces
 d3.select(window).on("resize", function(){
-    width_www = svg_www.node().getBoundingClientRect().width;
+    width_www = svg_www.node().getBoundingClientRect().width*0.6;
     height_www = svg_www.node().getBoundingClientRect().height;
     loadData(buttonid_www);
 });
