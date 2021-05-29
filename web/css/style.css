@@ -15,11 +15,11 @@ Mauve
 body {
 	background-color: black;
 	color: #c3c0cf;
-	font-family: 'Comic Sans MS', cursive;"
+	font-family: 'Trebuchet MS', sans-serif;
 }
 
 .navbar-text{
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 video {

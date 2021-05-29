@@ -150,7 +150,7 @@ loadData("www_0");
 
 // update size-related forces
 d3.select(window).on("resize", function(){
-    width_www = svg.node().getBoundingClientRect().width;
-    height_www = svg.node().getBoundingClientRect().height;
+    width_www = svg_www.node().getBoundingClientRect().width;
+    height_www = svg_www.node().getBoundingClientRect().height;
     loadData(buttonid_www);
 });
