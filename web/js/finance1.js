@@ -2312,8 +2312,8 @@ var f1data = [
     .attr("transform", "translate(0," + f1height + ")");
   
   const f1yAxisGroup = f1svg.append("g")
-    .attr("class", "y f1axis")
-    .attr("transform", "translate(" + f1x(0) + ",0)");
+    .attr("class", "y f1axis");
+    //.attr("transform", "translate(" + f1x(0) + ",0)");
   
   
   // Set Tooltips

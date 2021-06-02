@@ -364,3 +364,10 @@ fill: #c3c0cf;
   font: 12px sans-serif;
   fill: #c3c0cf;
 }
+
+#radio {
+  position: absolute;
+  /*height: 80%;
+  width: 100%;*/
+  top: 10%;
+}

@@ -58,13 +58,13 @@ var y = d3.scaleLinear()
     .attr("transform","translate(20,0)");
 
 // Set Tooltips
-  var node_tip = d3.tip()
-    .attr('class', 'finance1_tip')
-    .html(d => {
-      let text = "Title:" + d.title + "<br/>" + "Imdb score: "+ d.imdb + "<br/>" + "metascore: "+ d.metascore + "<br/>" + "Rotten tomatoes: "+ d.rotten_tomatoes + "<br/>";
-      return text
-    })
-  svg2.call(node_tip)
+var node_tip = d3.tip()
+  .attr('class', 'finance1_tip')
+  .html(d => {
+    let text = "Title:" + d.title + "<br/>" + "Imdb score: "+ d.imdb + "<br/>" + "metascore: "+ d.metascore + "<br/>" + "Rotten tomatoes: "+ d.rotten_tomatoes + "<br/>";
+    return text
+  });
+svg2.call(node_tip);
 
 
 // Lines
