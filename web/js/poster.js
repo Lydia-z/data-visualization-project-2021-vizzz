@@ -53,7 +53,7 @@ function upload_poster(title,description){
           poster.selectAll("image").remove();
           song.pause();
 
-          song.src = "./data/song/" + title + ".mp3";
+          song.src = "../data/song/" + title + ".mp3";
 
           song.play();
           poster.append("svg:image")
@@ -61,7 +61,7 @@ function upload_poster(title,description){
             .attr('y', 10)
             .attr('width', 246*0.9)
             .attr('height', 362*0.9)
-            .attr("xlink:href", "./data/poster/" + title + ".jpg");
+            .attr("xlink:href", "../data/poster/" + title + ".jpg");
           poster.append("text")
             .attr('x', 300)
             .attr('y', 90)
