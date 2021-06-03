@@ -158,6 +158,7 @@ section::before {
   color: white;
   padding: 8px 13px;
   cursor: pointer;
+  left: 3%;
 }
 #www_0{
   background-color: #613659;
@@ -302,7 +303,7 @@ fill: #c3c0cf;
   position:absolute;
   width:30%;
   height:auto;
-  top:10%;
+  top:40%;
   left:63%;
   font-size: 15px;
   color: #9035c4;
@@ -365,9 +366,41 @@ fill: #c3c0cf;
   fill: #c3c0cf;
 }
 
+#whose_contribution_explaination{
+  position:absolute;
+  width:30%;
+  height:auto;
+  top:40%;
+  left:3%;
+  font-size: 15px;
+  color: #9035c4;
+  background-color: darkblue;
+  text-align: left;
+}
+
+#wc_0{
+  background-color: #613659;
+}
+#wc_1{
+  background-color: #C197D2;
+}
+#wc_2{
+  background-color: #D3B1C2;
+}
+#wc_0:hover{
+  background-color: #211522;
+}
+#wc_1:hover{
+  background-color: #211522;
+}
+#wc_2:hover{
+  background-color: #211522;
+}
+
 #radio {
   position: absolute;
-  /*height: 80%;
-  width: 100%;*/
-  top: 10%;
+  height: 93%;
+  width: 50%;
+  top: 3%;
+  left: 45%;
 }

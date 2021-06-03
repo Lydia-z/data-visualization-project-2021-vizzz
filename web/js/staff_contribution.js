@@ -1,10 +1,15 @@
-function drawRadiograph(file_path){
-  var svg = d3.select("#radio"),
-      width = +svg.attr("width"),
-      height = +svg.attr("height"),
-      innerRadius = 80,
-      outerRadius = Math.min(width, height) / 2,
-      g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + (height / 2 +10)+ ")");
+var contribution_datas = ["./data/director_contribution.csv", "./data/producer_contribution.csv", "./data/music_contribution.csv"];
+var target_groups = ["Directors", "Producers", "Music Producers"];
+var svg_radio = d3.select("#radio"),
+    width = svg_radio.node().getBoundingClientRect().width,
+    height = svg_radio.node().getBoundingClientRect().width,
+    innerRadius = 80,
+    outerRadius = Math.min(width, height) / 2;
+    
+
+function drawRadiograph(button_id){
+  var ind = parseInt(button_id.split("_")[1]);
+  var target_group = target_groups[ind];
 
   var x = d3.scaleBand()
       .range([0, 2 * Math.PI])
@@ -14,14 +19,19 @@ function drawRadiograph(file_path){
       .range([innerRadius, outerRadius]);
 
   var z = d3.scaleOrdinal()
-      .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+      .range(["#211522", "#8a89a6", "#85D2D0", "#887BB0", "#613659", "#FFF4BD", "#F4B9B8"]);
 
-  d3.csv(file_path, function(d, i, columns) {
+  d3.csv(contribution_datas[ind], function(d, i, columns) {
     for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
     d.total = t;
     return d;
   }, function(error, data) {
     if (error) throw error;
+
+    // clean up svg
+    svg_radio.selectAll('*').remove();
+
+    var g = svg_radio.append("g").attr("transform", "translate(" + width / 2 + "," + (height / 2 + 15)+ ")");
 
     x.domain(data.map(function(d) { return d.Name; }));
     y.domain([0, d3.max(data, function(d) { return d.total; })]);
@@ -43,43 +53,24 @@ function drawRadiograph(file_path){
             .padAngle(0.01)
             .padRadius(innerRadius));
 
-    // create a tooltip
-    var Tooltip = d3.select("#radio_tooltip")
-      .append("div")
-      .style("opacity", 0)
-      .attr("class", "tooltip")
-      .style("background-color", "white")
-      .style("border", "solid")
-      .style("border-width", "2px")
-      .style("border-radius", "5px")
-      .style("padding", "5px")
+    // set tooltips
+    var tooltip = d3.tip()
+      .attr('class', 'finance1_tip')
+      .html(d => {
+        let text = d.data.Name + ":" + d.data.total + " movies.";
+        return text
+      });
+    svg_radio.call(tooltip);
 
-     // Three function that change the tooltip when user hover / move / leave a cell
     var mouseover = function(d) {
-      Tooltip
-        .style("opacity", 1)
       d3.select(this)
         .style("stroke", "black")
-        .style("opacity", 1)
+        .style("opacity", 1);
     }
-    var mousemove = function(d) {
-      console.log(d.data.Name);
-      Tooltip
-        .html("The exact value of<br>this cell is: " + d.data.Name)
-        .style("left", (d3.mouse(this)[0]+70) + "px")
-        .style("top", (d3.mouse(this)[1]) + "px")
-    }
-    var mouseleave = function(d) {
-      Tooltip
-        .style("opacity", 0)
-      d3.select(this)
-        .style("stroke", "none")
-        .style("opacity", 0.8)
-    }
+
     
-    bars.on('mouseover', mouseover)
-        .on("mousemove", mousemove)
-        .on("mouseleave", mouseleave);
+    bars.on('mouseover', tooltip.show)
+        .on("mouseout", tooltip.hide);
 
     var yAxis = g.append("g")
         .attr("text-anchor", "middle");
@@ -116,7 +107,7 @@ function drawRadiograph(file_path){
     yAxis.append("text")
         .attr("y", function(d) { return -y(y.ticks(5).pop()); })
         .attr("dy", "-1em")
-        .text("Number of Films")
+        .text("Number of Films for "+target_group)
         .attr("fill","#fff")
         .style("opacity", 0.8);
 
@@ -143,4 +134,13 @@ function drawRadiograph(file_path){
 }
 
 
-drawRadiograph("./data/director_contribution.csv");
+drawRadiograph("wc_0");
+
+// update size-related forces
+d3.select(window).on("resize", function(){
+    width = svg_radio.node().getBoundingClientRect().width,
+    height = svg_radio.node().getBoundingClientRect().width,
+    innerRadius = 80,
+    outerRadius = Math.min(width, height) / 2;
+    drawRadiograph(buttonid_www);
+});

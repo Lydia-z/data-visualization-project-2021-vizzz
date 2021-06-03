@@ -185,9 +185,17 @@ style needs to be changed</div>
 			<div class="slider">
 				<div class="slides">
 					<div class="slide">
-						<h2>Who contributes to which film</h2>
+						<h2>Who contributes to more highly reviewed films?</h2>
+						<div class="btn-group">
+							<button id='wc_0' onclick="drawRadiograph(this.id)">Directors</button>
+							<button id='wc_1' onclick="drawRadiograph(this.id)">Producers</button>
+							<button id='wc_2' onclick="drawRadiograph(this.id)">Music Drectors</button>
+						</div>
+						<div class="side_nodes" id="whose_contribution_explaination">
+							
+						</div>
 						<div id="radio_tooltip" class="tooltip"></div>
-						<svg id="radio" width="600" height="600" font-size="10">
+						<svg id="radio" font-size="10">
 						</svg>
 					</div>
 					<div class="slide">
