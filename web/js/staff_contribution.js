@@ -19,7 +19,7 @@ function drawRadiograph(button_id){
       .range([innerRadius, outerRadius]);
 
   var z = d3.scaleOrdinal()
-      .range(["#211522", "#8a89a6", "#85D2D0", "#887BB0", "#613659", "#FFF4BD", "#F4B9B8"]);
+      .range(["#94C973", "#F8EA8C", "#FFAEBC", "#D3B5E5", "#887BB0", "#613659", "#85D2D0"]);
 
   d3.csv(contribution_datas[ind], function(d, i, columns) {
     for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
@@ -108,7 +108,9 @@ function drawRadiograph(button_id){
         .attr("y", function(d) { return -y(y.ticks(5).pop()); })
         .attr("dy", "-1em")
         .text("Number of Films for "+target_group)
+        //.attr("transform", "translate(0," + (5) + ")")
         .attr("fill","#fff")
+        .attr("font-size", "15px")
         .style("opacity", 0.8);
 
 

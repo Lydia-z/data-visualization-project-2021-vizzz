@@ -110,7 +110,7 @@ section::before {
   top:45%;
   left:28%;
   font-size: 20px;
-  color: #9035c4;
+  color: #613659;
 }
 
 .top6 {
@@ -124,7 +124,7 @@ section::before {
 }
 
 #rank_link {
-  color: #9035c4;
+  color: #613659;
 }
 
 #top6_text {
@@ -137,7 +137,7 @@ section::before {
 }
 
 #char_fact {
-  color: #9035c4;
+  color: #613659;
 }
 
 #char_rank {
@@ -292,9 +292,8 @@ fill: #c3c0cf;
   width:30%;
   height:auto;
   top:10%;
-  left:3%;
+  left:0%;
   font-size: 15px;
-  color: #9035c4;
   background-color: darkblue;
   text-align: left;
 }
@@ -303,11 +302,9 @@ fill: #c3c0cf;
   position:absolute;
   width:30%;
   height:auto;
-  top:40%;
+  top:30%;
   left:63%;
   font-size: 15px;
-  color: #9035c4;
-  background-color: darkblue;
   text-align: left;
 }
 
@@ -368,13 +365,11 @@ fill: #c3c0cf;
 
 #whose_contribution_explaination{
   position:absolute;
-  width:30%;
+  width:40%;
   height:auto;
   top:40%;
-  left:3%;
+  left:0%;
   font-size: 15px;
-  color: #9035c4;
-  background-color: darkblue;
   text-align: left;
 }
 
