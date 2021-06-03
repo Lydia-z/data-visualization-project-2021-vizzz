@@ -2376,7 +2376,7 @@ f3svg.selectAll("rect")
       .style('left', (d3.event.layerX - 25) + 'px');
   })
   .on('mouseout', function (d) {
-    d3.selectAll("rect")
+    f3svg.selectAll("rect")
       .style("fill", function (d) {
         return f3timecolor(f3parseTime(d.ReleaseDate).getYear());
       })
