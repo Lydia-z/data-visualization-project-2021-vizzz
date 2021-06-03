@@ -2359,8 +2359,8 @@ f3tooltip.append('div')
 f3svg.selectAll("rect")
   .on('mouseover', function (d) {
 
-    f3tooltip.select('.date').html("Date: <b>" + f3formatTime(f3parseTime(d.ReleaseDate).getTime()) + "</b>");
-    f3tooltip.select('.BoxOffice').html("BoxOffice: <b>" + Math.round(d.BoxOffice * 100) / 100 + "<b>");
+    f3tooltip.select('.f3date').html("Date: <b>" + f3formatTime(f3parseTime(d.ReleaseDate).getTime()) + "</b>");
+    f3tooltip.select('.f3BoxOffice').html("BoxOffice: <b>" + Math.round(d.BoxOffice * 100) / 100 + "<b>");
 
     d3.select(this)
       .style("fill", "#FFFFFF")
