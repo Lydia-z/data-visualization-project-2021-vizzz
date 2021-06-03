@@ -98,11 +98,14 @@
 							style='width:25%;top:20%;left:18%' />
 						<img class='top6' id='character_2' src='data/pic/2_donaldduck.png'
 							style='width:15%;top:40%;left:40%' />
-						<img class='top6' id='character_3' src='data/pic/3_genie.png' style='width:17%;top:10%;left:8%' />
+						<img class='top6' id='character_3' src='data/pic/3_genie.png'
+							style='width:17%;top:10%;left:8%' />
 						<img class='top6' id='character_4' src='data/pic/4_snowwhite.png'
 							style='width:16%;top:50%;left:7%' />
-						<img class='top6' id='character_5' src='data/pic/5_goofy.png' style='width:14%;top:67%;left:20%' />
-						<img class='top6' id='character_6' src='data/pic/6_simba.png' style='width:8%;top:15%;left:40%' />
+						<img class='top6' id='character_5' src='data/pic/5_goofy.png'
+							style='width:14%;top:67%;left:20%' />
+						<img class='top6' id='character_6' src='data/pic/6_simba.png'
+							style='width:8%;top:15%;left:40%' />
 						<div id='top6_text'>
 							<h3 id='char_rank'></h3>
 							<div id='char_fact'></div>
@@ -126,10 +129,11 @@
 			<div class="slider">
 				<div class="slides">
 					<div class="slide" id="pop_slide">
-						
+
 						<div id="my_dataviz_timeline"></div>
 						<div id="poster_movie"></div>
-						<img id="pause" src=".\data\pic\icons8-music-128.png" width="50" height="50" onclick="pause()"/>
+						<img id="pause" src=".\data\pic\icons8-music-128.png" width="50" height="50"
+							onclick="pause()" />
 					</div>
 				</div>
 			</div>
@@ -140,21 +144,21 @@
 			<div class="slider">
 				<div class="slides">
 					<div class="slide" id="f1_slide">
-						<h2>More Budget, Better Movie?</h2>						
-						<div class="side_nodes" id="f1_explaination">explain a bit, 
+						<h2>More Budget, Better Movie?</h2>
+						<div class="side_nodes" id="f1_explaination">explain a bit,
 
 							blahblahblahblahblahblahblahblahblahblah
-						blahblahblahblahblahblahblahblahblahblahb
-					lahblahblahblahblahblahblahblahblahblah, 
+							blahblahblahblahblahblahblahblahblahblahb
+							lahblahblahblahblahblahblahblahblahblah,
 
-				slide to see the top 10 movies 
+							slide to see the top 10 movies
 
-				blahblahblahb
-			lahblahblahblahblahblahblahblahblahblahblahblah
-			blhblahblahblahblahblahblahblahblahblahblahb
-	hblahblahblahblahblah...
+							blahblahblahb
+							lahblahblahblahblahblahblahblahblahblahblahblah
+							blhblahblahblahblahblahblahblahblahblahblahb
+							hblahblahblahblahblah...
 
-style needs to be changed</div>
+							style needs to be changed</div>
 						<div class="f1-value">
 							<div id="f1-value-range"></div>
 						</div>
@@ -171,10 +175,16 @@ style needs to be changed</div>
 							<button id='finance2_0' onclick="update0()">Profit</button>
 							<button id='finance2_1' onclick="update1()">ROI</button>
 							<button id='finance2_2' onclick="update2()">Loss</button>
-						  </div>
-						  <div class="f2-area">
-							  <div id="finance2-area"></div>
-						  </div>
+						</div>
+						<div class="f2-area">
+							<div id="finance2-area"></div>
+						</div>
+					</div>
+					<div class="slide" id="f3_slide">
+						<h2>Finance value will be updated</h2>
+						<div class="fs3-area">
+							<div id="f3-area"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -194,7 +204,8 @@ style needs to be changed</div>
 						<div class="side_nodes" id="whose_contribution_explaination">
 							Who are the staffs behind the great scenes? We present the contribution of the directors,
 							producers and music directors of all the Disney movies in the dataset. The three categories
-							are presented seperately. Click the button above, browse the radio graph to see who are they, 
+							are presented seperately. Click the button above, browse the radio graph to see who are
+							they,
 							how many films each of them took part in, and how high the reviews are for their movies.
 						</div>
 						<div id="radio_tooltip" class="tooltip"></div>
@@ -204,12 +215,16 @@ style needs to be changed</div>
 					<div class="slide">
 						<h2>Cooperation Among People</h2>
 						<div class="side_nodes" id="www_explaination">
-							Having explored their individual contribution to the Disney films, you may wonder if they ever
-							collaborated. Indeed they did! The network here shows who worked with whom in making Disney movies.
-							Size of the node indicates how involved the person is. The larger the node is, the more movies
-							the staff took part in. Width of the link indicates how strong the relationship is between the two nodes. Larger
+							Having explored their individual contribution to the Disney films, you may wonder if they
+							ever
+							collaborated. Indeed they did! The network here shows who worked with whom in making Disney
+							movies.
+							Size of the node indicates how involved the person is. The larger the node is, the more
+							movies
+							the staff took part in. Width of the link indicates how strong the relationship is between
+							the two nodes. Larger
 							width means the two staffs have worked together more times.
-							<br/>
+							<br />
 							Although there are some clusters, most of the staffs took the corresponding role solely.
 						</div>
 						<div class="btn-group">
@@ -246,6 +261,7 @@ style needs to be changed</div>
 	<script src="js/top6.js"></script>
 	<script src="js/color_character.js"></script>
 	<script src="js/who_with_whom.js"></script>
+	<script src="js/finance3.js"></script>
 	<script src="js/finance2.js"></script>
 	<script src="js/finance1.js"></script>
 	<script type="text/javascript" src="js/lolipop.js"></script>

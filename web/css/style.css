@@ -399,3 +399,11 @@ fill: #c3c0cf;
   top: 3%;
   left: 45%;
 }
+
+.fs3-area {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 12%;
+  /*background-color: darkblue;*/
+}
