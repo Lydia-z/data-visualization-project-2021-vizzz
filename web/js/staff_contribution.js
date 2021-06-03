@@ -63,14 +63,21 @@ function drawRadiograph(button_id){
     svg_radio.call(tooltip);
 
     var mouseover = function(d) {
+      tooltip.show(d, this);
       d3.select(this)
         .style("stroke", "black")
         .style("opacity", 1);
     }
+    var mouseout = function(d) {
+      tooltip.hide(d, this);
+      d3.select(this)
+        .style("stroke", "none")
+        .style("opacity", 0.8);
+    }
 
     
-    bars.on('mouseover', tooltip.show)
-        .on("mouseout", tooltip.hide);
+    bars.on('mouseover', mouseover)
+        .on("mouseout", mouseout);
 
     var yAxis = g.append("g")
         .attr("text-anchor", "middle");
@@ -108,7 +115,7 @@ function drawRadiograph(button_id){
         .attr("y", function(d) { return -y(y.ticks(5).pop()); })
         .attr("dy", "-1em")
         .text("Number of Films for "+target_group)
-        //.attr("transform", "translate(0," + (5) + ")")
+        .attr("transform", "translate(0," + (5) + ")")
         .attr("fill","#fff")
         .attr("font-size", "15px")
         .style("opacity", 0.8);
