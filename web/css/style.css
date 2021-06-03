@@ -239,15 +239,32 @@ fill: #c3c0cf;
 .f2-area {
   position: absolute;
   height: 80%;
-  width: 100%;
+  width: 80%;
   top: 20%;
   /*background-color: darkblue;*/
 }
+
+.f2-legend {
+  position: absolute;
+  height: 10%;
+  width: 20%;
+  top: 40%;
+  left: 80%;
+  /*background-color: darkblue;*/
+}
+
+
 
 #finance2-area text {
   font: 12px sans-serif;
   fill: #c3c0cf;
 }
+
+#finance2-legend text {
+  font: 12px sans-serif;
+  fill: #c3c0cf;
+}
+
 
 .f2-bar-positive {
   fill: #613659;
