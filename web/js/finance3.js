@@ -31,7 +31,7 @@ var f3radius = d3.scaleLinear()
 
 var f3svg = d3.select("#f3-area").append("svg")
   .attr("width", f3width + f3margin.right + f3margin.left)
-  .attr("height", f3height + f3margin.left + f3margin.right)
+  .attr("height", f3height + f3margin.left + f3margin.right - 100)
   .append("g")
   .attr("transform", "translate(" + f3width / 2 + "," + f3height / 2 + ")");
 
