@@ -10,8 +10,8 @@
 
 ## Technical Setup
 There are two ways to view our visualization. 
-* Github host: You could explore our visualization through the following link [link to our webpage](https://com-480-data-visualization.github.io/data-visualization-project-2021-vizzz)
-* Local host: You could also setup our visualization on your localhost or create your own viz accordingly. 
+* Github host: You could explore our visualization through the following [link](https://com-480-data-visualization.github.io/data-visualization-project-2021-vizzz)
+* Local host: You could also setup our visualization on your localhost and create your own viz accordingly. 
 
 ### Setup local host
 1. Clone the whole repo to your desired directory. A guide to install git could be found [Here](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
