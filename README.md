@@ -127,7 +127,7 @@ The skeleton code could be found in the `web` folder: [Skeleton Code](https://gi
 
 The screencast video for Milestone 3 could be found with the following link: [Screencast Milestone 3](https://youtu.be/xNzMJp3-AZU)
 
-The process book for Milestone 3 could be found with the following link: [Process Book Milestone 3](https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz/blob/master/Report/Report%20Milestone%202.pdf)
+The process book for Milestone 3 could be found with the following link: [Process Book Milestone 3](https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz/blob/master/Report/COM480_TeamVizzz_Process_book.pdf)
 
 ## Late policy
 
