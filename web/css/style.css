@@ -308,10 +308,9 @@ fill: #c3c0cf;
   position:absolute;
   width:30%;
   height:auto;
-  top:10%;
+  top:25%;
   left:0%;
-  font-size: 15px;
-  background-color: darkblue;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -357,7 +356,7 @@ fill: #c3c0cf;
   width: auto;
   height: auto;
   padding: 3px 5px 3px 5px;
-  font: 0.5em sans-serif;
+  font: 1em sans-serif;
   border: 0px;
   border-radius: 5px;
   background-color: #211522;
@@ -422,7 +421,7 @@ fill: #c3c0cf;
   height: 70%;
   width: 70%;
   top: 12%;
-  left: 15%;
+  left: 30%;
   /*background-color: darkblue;*/
 }
 
@@ -436,4 +435,14 @@ fill: #c3c0cf;
   border: 0px;
   border-radius: 5px;
   background-color: #211522;
+}
+
+#f3_explaination{
+  position:absolute;
+  width:30%;
+  height:auto;
+  top:25%;
+  left:0%;
+  font-size: 18px;
+  text-align: left;
 }
