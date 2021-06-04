@@ -10,7 +10,7 @@
 
 ## Technical Setup
 There are two ways to view our visualization. 
-* Github host: You could explore our visualization through the following [link](https://com-480-data-visualization.github.io/data-visualization-project-2021-vizzz)
+* Github host: You could explore our visualization through the this [link](https://com-480-data-visualization.github.io/data-visualization-project-2021-vizzz).
 * Local host: You could also setup our visualization on your localhost and create your own viz accordingly. 
 
 ### Setup local host
@@ -26,17 +26,18 @@ Path-to-Your-Directory\data-visualization-project-2021-vizzz> http-server
 
 ## Intended Usage
 
-The topic of our visualization project is to explore movies from Disney. The current scenes have been designed as following
-* The audience will check our visualization through the standard Disney title sequence. The main page of the visualization will conclude the most popular movies from Disney, their issue timeline. The user click will trigger the theme song of the corresponding movie. 
-* The second scene is designed to be an interactive page about the main characters. The audience will be allowed to choose their favorite character from a given list. The chosen character will be colored and a visualization page of the most popular characters will appear. 
-* The third scene will be a film ranking with the criteria including a budget, box office, and IMDb rating.
-* The fourth scene will present the directors and/or producers. It will enable the audience to find movies that fit their taste. This scene is inspired by the Beatles’ visualization project shown during the course. 
+The topic of our visualization project is to explore movies from Disney. The current scenes have been designed as follows:
+* The audience will be welcomed by a standard Disney title sequence. 
+* The second scene is designed to be an interactive section about some Disney characters. The audience can choose favored character from a given list. The chosen character will be colored. In the next slide, there is a section showing the 6 most popular characters. 
+* Following the character scene, there is a scene with the visualization concludes the most popular movies from Disney and their issued timeline. Clicking the node will trigger the theme song of the corresponding movie.
+* In the next scene, the audience gets to know more financial details of those movies, including a budget, box office, and IMDb rating.
+* The final scene presents the involved people. The audience can find out people's contribution and cooperative relationship here.
 
-The target audience persona is
-* 25-50 years old adults, searching for a movie to watch but have limited time to make the decision. The audiences demand a quick visualization tool to explore the top movies from Disney and select the next movie to watch with data-driven decision-making. 
-* 8-30 years old Disney fans, who had watched movies featured by Disney and enjoyed at least one of the movies. The audiences have the time and passion to explore more information about the movies including the main characters. They would like to have a visual overview of all Disney movies and the visualization tool should be a good index for further research. 
+The target audiences are:
+* Adults who wish to search for a Disney movie to watch but have limited time to make the decision. The audiences demand a quick visualization tool to explore the top movies from Disney and select the next movie to watch with data-driven decision-making. 
+* Disney fans who have watched movies featured by Disney and enjoyed at least one of the movies. The audiences have the time and passion to explore more information about the movies including the main characters. They would like to have a visual overview of all Disney movies and the visualization tool should be a good index for further research. 
 
-A user-guide demostration could be found with the following link [Screencast](https://youtu.be/xNzMJp3-AZU)
+A user-guide demostration could be found with the following link [Screencast](https://youtu.be/xNzMJp3-AZU).
 
 ## Milestone 1 
 (23rd April, 5pm)
