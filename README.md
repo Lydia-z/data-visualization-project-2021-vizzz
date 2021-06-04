@@ -6,9 +6,40 @@
 | Zhou, Runke    | 322308|
 | Di, Yao        | 255619|
 
-[Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
+[Technical Setup](#technical-setup) • [Intended Usage](#intended-usage) • [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
-## Milestone 1 (23rd April, 5pm)
+## Technical Setup
+There are two ways to view our visualization. 
+* Online: You could explore our visualization through the following link [link to our webpage](https://com-480-data-visualization.github.io/data-visualization-project-2021-vizzz)
+* Offline: You could also setup our visualization on your localhost or create your own viz accordingly. 
+
+### Setup local host
+1. Clone the whole repo to your desired directory. A guide to install git could be found [Here](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+```
+Path-to-Your-Directory> git clone https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz.git
+```
+3. Setup the http server at the root folder of your local directory. A guide to install http server could be found [Here](https://www.npmjs.com/package/http-server)
+```
+Path-to-Your-Directory\data-visualization-project-2021-vizzz> http-server 
+```
+3. Open your browser and put the address of your http server (`http://localhost:8080/` as default)
+
+## Intended Usage
+
+The topic of our visualization project is to explore movies from Disney. The current scenes have been designed as following
+* The audience will check our visualization through the standard Disney title sequence. The main page of the visualization will conclude the most popular movies from Disney, their issue timeline. The user click will trigger the theme song of the corresponding movie. 
+* The second scene is designed to be an interactive page about the main characters. The audience will be allowed to choose their favorite character from a given list. The chosen character will be colored and a visualization page of the most popular characters will appear. 
+* The third scene will be a film ranking with the criteria including a budget, box office, and IMDb rating.
+* The fourth scene will present the directors and/or producers. It will enable the audience to find movies that fit their taste. This scene is inspired by the Beatles’ visualization project shown during the course. 
+
+The target audience persona is
+* 25-50 years old adults, searching for a movie to watch but have limited time to make the decision. The audiences demand a quick visualization tool to explore the top movies from Disney and select the next movie to watch with data-driven decision-making. 
+* 8-30 years old Disney fans, who had watched movies featured by Disney and enjoyed at least one of the movies. The audiences have the time and passion to explore more information about the movies including the main characters. They would like to have a visual overview of all Disney movies and the visualization tool should be a good index for further research. 
+
+A user-guide demostration could be found with the following link [Screencast](https://youtu.be/xNzMJp3-AZU)
+
+## Milestone 1 
+(23rd April, 5pm)
 
 **10% of the final grade**
 
@@ -84,16 +115,19 @@ Apart from the project which uses the same database as we do, we also found the 
 * [Disney Movies by Year and Type - Nicole](https://public.tableau.com/profile/nicole1574#!/vizhome/DisneyMovies2/Dashboard1)
 * [Disney Films Visualization - Bushra Nadeem](https://public.tableau.com/profile/b.humanadeem#!/vizhome/DisneyFilms_15931097490060/DisneyFilms)
 
-## Milestone 2 (7th May, 5pm)
+## Milestone 2
+(7th May, 5pm)
 
 The report for Milestone 2 could be found with the following link: [Report Milestone 2](https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz/blob/master/Report/Report%20Milestone%202.pdf)
 
 The skeleton code could be found in the `web` folder: [Skeleton Code](https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz/tree/master/web)
 
-## Milestone 3 (4th June, 5pm)
+## Milestone 3
+(4th June, 5pm)
 
-* [Screencast](https://youtu.be/xNzMJp3-AZU)
+The screencast video for Milestone 3 could be found with the following link: [Screencast Milestone 3](https://youtu.be/xNzMJp3-AZU)
 
+The process book for Milestone 3 could be found with the following link: [Process Book Milestone 3](https://github.com/com-480-data-visualization/data-visualization-project-2021-vizzz/blob/master/Report/Report%20Milestone%202.pdf)
 
 ## Late policy
 
