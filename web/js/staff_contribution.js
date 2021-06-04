@@ -1,3 +1,4 @@
+//The idea of this graph comes from https://bl.ocks.org/mbostock/6fead6d1378d6df5ae77bb6a719afcb2
 var contribution_datas = ["./data/director_contribution.csv", "./data/producer_contribution.csv", "./data/music_contribution.csv"];
 var target_groups = ["Directors", "Producers", "Music Producers"];
 var svg_radio = d3.select("#radio"),
