@@ -14,7 +14,7 @@ f3margin = {
 };
 
 const f3parseTime = d3.timeParse("%Y-%m-%d")
-const f3formatTime = d3.timeFormat("%b %Y")
+const f3formatTime = d3.timeFormat("%d %b %Y")
 
 var f3curvetheta = function (r) {
   return f3numSpirals * Math.PI * r * 0.5;
@@ -51,7 +51,7 @@ var f3path = f3svg.append("path")
 
 var f3spiralLength = f3path.node().getTotalLength(),
   f3N = f3data.length,
-  f3barWidth = (f3spiralLength / f3N / 2) - 2;
+  f3barWidth = (f3spiralLength / f3N / 4) - 2;
 
 
 var f3timeScale = d3.scaleTime()
@@ -64,7 +64,7 @@ var f3timeScale = d3.scaleTime()
 var f3yScale2 = d3.scaleLog()
   .domain([d3.min(f3data, d => d.BoxOffice), d3.max(f3data, d => d.BoxOffice)])
   .range([0, (r / f3numSpirals) - 30])
-  .base(2);
+  .base(10);
 
 f3svg.selectAll("rect")
   .data(f3data)
@@ -118,7 +118,9 @@ f3svg.selectAll("text")
     var sd = labeltF(f3parseTime(d.ReleaseDate).getTime());
     if (!firstInYear[sd]) {
       firstInYear[sd] = 1;
-      return true;
+      if(sd%5 == 0){
+        return true;
+      }
     }
     return false;
   })
@@ -139,6 +141,8 @@ var f3tooltip = d3.select("#f3-area")
 
 f3tooltip.append('div')
   .attr('class', 'f3date');
+  f3tooltip.append('div')
+  .attr('class', 'f3name');
 f3tooltip.append('div')
   .attr('class', 'f3BoxOffice');
 
@@ -146,6 +150,7 @@ f3svg.selectAll("rect")
   .on('mouseover', function (d) {
 
     f3tooltip.select('.f3date').html("Date: <b>" + f3formatTime(f3parseTime(d.ReleaseDate).getTime()) + "</b>");
+    f3tooltip.select('.f3name').html("Movie Name: <b>" + d.title + "</b>");
     f3tooltip.select('.f3BoxOffice').html("BoxOffice: <b>" + Math.round(d.BoxOffice * 100) / 100 + "<b>");
 
     d3.select(this)
