@@ -92,7 +92,7 @@ The skeleton code could be found in the `web` folder: [Skeleton Code](https://gi
 
 ## Milestone 3 (4th June, 5pm)
 
-**80% of the final grade**
+* [Screencast](https://youtu.be/xNzMJp3-AZU)
 
 
 ## Late policy
