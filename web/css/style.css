@@ -381,7 +381,7 @@ fill: #c3c0cf;
 
 #whose_contribution_explaination{
   position:absolute;
-  width:10%;
+  width:40%;
   height:auto;
   top:40%;
   left:0%;
@@ -411,7 +411,7 @@ fill: #c3c0cf;
 #radio {
   position: absolute;
   height: 93%;
-  width: 50%;
+  width: 40%;
   top: 3%;
   left: 45%;
 }
